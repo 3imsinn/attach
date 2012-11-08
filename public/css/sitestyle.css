@@ -1,0 +1,4246 @@
+.subcontainer{
+min-height:100px;
+margin-top:35px;
+}
+
+#left{
+  float:left;
+}
+
+#right{
+  float:right;
+}
+
+
+
+.container-inline-date {
+  width:auto; 
+  clear:both;
+  padding:0;
+  display: inline-block;
+  vertical-align:top;
+  margin-right: 0.5em;
+}
+
+.container-inline-date .form-item {
+  float:none;
+  padding:0;
+  margin:0;
+}
+.container-inline-date .form-item .form-item {
+  float:left;
+}
+.container-inline-date .form-item, 
+.container-inline-date .form-item input {
+  width:auto;
+}
+.container-inline-date .description {
+  clear: both;
+}
+
+.container-inline-date .form-item input,
+.container-inline-date .form-item select,
+.container-inline-date .form-item option {
+  margin-right:.5em;
+}
+
+.container-inline-date .date-spacer {
+  margin-left:-.5em;
+}
+
+/* force IE to display the jscalendar icon in date fieldsets */
+.container-inline-date .jscalendar-icon {
+  text-indent: 0;
+}
+
+/* formatting for from/to dates in nodes and views */
+span.date-display-single {
+}
+span.date-display-start {
+}
+span.date-display-end {
+}
+span.date-display-separator {
+}
+
+.date-repeat-input {
+  float:left;
+  width:auto;
+  margin-right:5px;
+}
+.date-repeat-input select {
+  min-width:7em;
+}
+.date-repeat fieldset {
+  clear:both;
+  float:none;
+}
+
+.date-nav {
+  width:100%;
+}
+.date-nav div.date-prev {
+  text-align: left;
+  width:24%;
+  float:left;
+}
+.date-nav div.date-next {
+  text-align: right;
+  width:24%;
+  float:right;
+}
+.date-nav div.date-heading {
+  text-align:center;
+  width:50%;
+  float:left;
+}
+.date-nav div.date-heading h3 {
+  margin:0;
+  padding:0;
+}
+.date-clear {
+  float:none;
+  clear:both;
+  display:block;
+}
+
+.date-clear-block {
+  float:none;
+  width:auto;
+  clear:both;
+}
+
+/* 	 
+ ** Markup free clearing that fixes unwanted scrollbars 	 
+ ** @see http://drupal.org/node/232959 	 
+ */ 	 
+ .date-clear-block:after { 	 
+   content: " "; 	 
+   display: block; 	 
+   height: 0; 	 
+   clear: both; 	 
+   visibility: hidden; 	 
+ } 	 
+ .date-clear-block { 	 
+   display: inline-block; 	 
+ } 	 
+ /* Hides from IE-mac \*/ 	 
+ * html .date-clear-block { 	 
+   height: 1%; 	 
+ } 	 
+ .date-clear-block { 	 
+   display: block; 	 
+ } 	 
+ /* End hide from IE-mac */
+
+
+
+/* $Id: defaults.css,v 1.2 2006/08/25 09:01:12 drumm Exp $ */
+
+/*
+** HTML elements
+*/
+fieldset {
+  margin-bottom: 1em;
+  padding: .5em;
+}
+form {
+  margin: 0;
+  padding: 0;
+}
+hr {
+  height: 1px;
+  border: 1px solid gray;
+}
+img {
+  border: 0;
+}
+
+
+/*
+** Markup free clearing
+** Details: http://www.positioniseverything.net/easyclearing.html
+*/
+.clear-block:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear-block {
+  display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html .clear-block {
+  height: 1%;
+}
+.clear-block {
+  display: block;
+}
+/* End hide from IE-mac */
+
+
+/* http://static.bambuser.com/modules/system/system.css */
+
+
+/* $Id: system.css,v 1.21 2006/12/21 16:13:06 dries Exp $ */
+
+/*
+** HTML elements
+*/
+th.active img {
+  display: inline;
+}
+tr.even, tr.odd {
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+  padding: 0.1em 0.6em;
+}
+td.active {
+  background-color: #ddd;
+}
+tbody {
+  border-top: 1px solid #ccc;
+}
+tbody th {
+  border-bottom: 1px solid #ccc;
+}
+thead th {
+  text-align: left;
+  padding-right: 1em;
+  border-bottom: 3px solid #ccc;
+}
+
+/*
+** Other common styles
+*/
+.breadcrumb {
+  padding-bottom: .5em
+}
+.error {
+  color: #f00;
+}
+div.error {
+  border: 1px solid #d77;
+}
+div.error, tr.error {
+  background: #fcc;
+  color: #200;
+}
+div.warning, tr.warning {
+  background: #ffd;
+}
+div.ok, tr.ok {
+  background: #dfd;
+}
+.item-list .icon {
+  color: #555;
+  float: right;
+  padding-left: 0.25em;
+  clear: right;
+}
+.item-list .title {
+  font-weight: bold;
+}
+.item-list ul {
+  margin: 0 0 0.75em 0;
+  padding: 0;
+}
+.item-list ul li {
+  margin: 0 0 0.25em 1.5em;
+  padding: 0;
+  list-style: disc;
+}
+.form-item {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+tr.odd .form-item, tr.even .form-item {
+  margin-top: 0;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+tr.merge-down, tr.merge-down td, tr.merge-down th {
+  border-bottom-width: 0 !important;
+}
+tr.merge-up, tr.merge-up td, tr.merge-up th {
+  border-top-width: 0 !important;
+}
+.form-item input.error, .form-item textarea.error, .form-item select.error {
+  border: 2px solid red;
+}
+.form-item .description {
+  font-size: 0.85em;
+}
+.form-item label {
+  display: block;
+  font-weight: bold;
+}
+.form-item label.option {
+  display: inline;
+  font-weight: normal;
+}
+.form-checkboxes, .form-radios {
+  margin: 1em 0;
+}
+.form-checkboxes .form-item, .form-radios .form-item {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+.marker, .form-required {
+  color: #f00;
+}
+.more-link {
+  text-align: right;
+}
+.more-help-link {
+  font-size: 0.85em;
+  text-align: right;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.pager {
+  clear: both;
+  text-align: center;
+}
+.pager a, .pager strong.pager-current {
+  padding: 0.5em;
+}
+.tips {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 0.9em;
+}
+dl.multiselect dd.b, dl.multiselect dd.b .form-item, dl.multiselect dd.b select {
+  font-family: inherit;
+  font-size: inherit;
+  width: 14em;
+}
+dl.multiselect dd.a, dl.multiselect dd.a .form-item {
+  width: 8em;
+}
+dl.multiselect dt, dl.multiselect dd {
+  float: left;
+  line-height: 1.75em;
+  padding: 0;
+  margin: 0 1em 0 0;
+}
+dl.multiselect .form-item {
+  height: 1.75em;
+  margin: 0;
+}
+
+/*
+** Inline items (need to override above)
+*/
+.container-inline div, .container-inline label {
+  display: inline;
+}
+
+/*
+** Menus
+*/
+ul.menu {
+  list-style: none;
+  border: none;
+  text-align:left;
+}
+ul.menu li {
+  margin: 0 0 0 0.5em;
+}
+li.expanded {
+  list-style-type: circle;
+  list-style-image: url(../../misc/menu-expanded.png);
+  padding: 0.2em 0.5em 0 0;
+  margin: 0;
+}
+li.collapsed {
+  list-style-type: disc;
+  list-style-image: url(../../misc/menu-collapsed.png);
+  padding: 0.2em 0.5em 0 0;
+  margin: 0;
+}
+li.leaf {
+  list-style-type: square;
+  list-style-image: url(../../misc/menu-leaf.png);
+  padding: 0.2em 0.5em 0 0;
+  margin: 0;
+}
+li a.active {
+  color: #000;
+}
+td.menu-disabled {
+  background: #ccc;
+}
+ul.links {
+  margin: 0;
+  padding: 0;
+}
+ul.links.inline {
+  display: inline;
+}
+ul.links li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 0.5em;
+}
+.block ul {
+  margin: 0;
+  padding: 0 0 0.25em 1em;
+}
+
+/*
+** Tab navigation
+*/
+ul.primary {
+  border-collapse: collapse;
+  padding: 0 0 0 1em;
+  white-space: nowrap;
+  list-style: none;
+  margin: 5px;
+  height: auto;
+  line-height: normal;
+  border-bottom: 1px solid #bbb;
+}
+ul.primary li {
+  display: inline;
+}
+ul.primary li a {
+  background-color: #ddd;
+  border-color: #bbb;
+  border-width: 1px;
+  border-style: solid solid none solid;
+  height: auto;
+  margin-right: 0.5em;
+  padding: 0 1em;
+  text-decoration: none;
+}
+ul.primary li.active a {
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-bottom: #fff 1px solid;
+}
+ul.primary li a:hover {
+  background-color: #eee;
+  border-color: #ccc;
+  border-bottom-color: #eee;
+}
+ul.secondary {
+  border-bottom: 1px solid #bbb;
+  padding: 0.5em 1em;
+  margin: 5px;
+}
+ul.secondary li {
+  display: inline;
+  padding: 0 1em;
+  border-right: 1px solid #ccc;
+}
+ul.secondary a {
+  padding: 0;
+  text-decoration: none;
+}
+ul.secondary a.active {
+  border-bottom: 4px solid #999;
+}
+
+/*
+** Autocomplete styles
+*/
+/* Suggestion list */
+#autocomplete {
+  position: absolute;
+  border: 1px solid;
+  overflow: hidden;
+  z-index: 100;
+}
+#autocomplete ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#autocomplete li {
+  background: #fff;
+  color: #000;
+  white-space: pre;
+  cursor: default;
+}
+#autocomplete li.selected {
+  background: #0072b9;
+  color: #fff;
+}
+/* Animated throbber */
+html.js input.form-autocomplete {
+  background-image: url(../../misc/throbber.gif);
+  background-repeat: no-repeat;
+  background-position: 100% 2px;
+}
+html.js input.throbbing {
+  background-position: 100% -18px;
+}
+
+/*
+** Collapsing fieldsets
+*/
+html.js fieldset.collapsed {
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  margin-bottom: 0;
+  height: 1em;
+}
+html.js fieldset.collapsed * {
+  display: none;
+}
+html.js fieldset.collapsed legend {
+  display: block;
+}
+html.js fieldset.collapsible legend a {
+  padding-left: 15px;
+  background: url(../../misc/menu-expanded.png) 5px 75% no-repeat;
+}
+html.js fieldset.collapsed legend a {
+  background-image: url(../../misc/menu-collapsed.png);
+  background-position: 5px 50%;
+}
+/* Note: IE-only fix due to '* html' (breaks Konqueror otherwise). */
+* html.js fieldset.collapsed legend,
+* html.js fieldset.collapsed legend *,
+* html.js fieldset.collapsed table * {
+  display: inline;
+}
+html.js fieldset.collapsible legend a {
+  display: block;
+}
+/* Avoid jumping around due to margins collapsing into collapsible fieldset border */
+html.js fieldset.collapsible .fieldset-wrapper {
+  overflow: auto;
+}
+
+/*
+** Resizable text areas
+*/
+.resizable-textarea {
+  width: 95%;
+}
+.resizable-textarea .grippie {
+  height: 9px;
+  overflow: hidden;
+  background: #eee url(../../misc/grippie.png) no-repeat center 2px;
+  border: 1px solid #ddd;
+  border-top-width: 0;
+  cursor: s-resize;
+}
+html.js .resizable-textarea textarea {
+  margin-bottom: 0;
+  width: 100%;
+  display: block;
+}
+
+/*
+** Progressbar styles
+*/
+.progress {
+  font-weight: bold;
+}
+.progress .bar {
+  background: #fff url(../../misc/progress.gif);
+  border: 1px solid #00375a;
+  height: 1.5em;
+  margin-top: 0.2em;
+}
+.progress .filled {
+  background: #0072b9;
+  height: 1em;
+  border-bottom: 0.5em solid #004a73;
+  width: 0%;
+}
+.progress .percentage {
+  float: right;
+}
+
+/*
+** Formatting for welcome page
+*/
+#first-time strong {
+  display: block;
+  padding: 1.5em 0 .5em;
+}
+
+
+
+
+
+
+/* user.css */
+
+/* $Id: user.css,v 1.4 2006/12/30 07:45:31 dries Exp $ */
+
+#permissions td.module {
+  font-weight: bold;
+}
+#permissions td.permission {
+  padding-left: 1.5em;
+}
+#access-rules .access-type, #access-rules .rule-type {
+  margin-right: 1em;
+  float: left;
+}
+#access-rules .access-type .form-item, #access-rules .rule-type .form-item {
+  margin-top: 0;
+}
+#access-rules .mask {
+  clear: both;
+}
+#user-login-form {
+  text-align: center;
+}
+#user-admin-filter ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+#user-admin-buttons {
+  float: left;
+  margin-left: 0.5em;
+  clear: right;
+}
+
+/* Generated by user.module but used by profile.module: */
+.profile {
+  clear: both;
+  margin: 1em 0;
+}
+.profile .picture {
+  float: right;
+  margin: 0 1em 1em 0;
+}
+.profile dt {
+  margin: 1em 0 0.2em 0;
+  font-weight: bold;
+}
+.profile dd {
+  margin:0;
+}
+
+
+
+/*
+ * Bambuser V3 CSS. Left here so we do not break anything on
+ * the front page for logged in users.
+ */
+
+#front-container {
+  width: 980px;
+}
+
+body.front #main-inner {
+  margin: 0px;
+}
+
+ #product_grid {
+  list-style-type: none;
+  width: 100%;
+  font-size: .75em;
+  padding: 0;
+}
+
+#product_grid li {
+    display: block;
+    float: left;
+    height: 200px;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+#front-main {
+  width: 660px;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+#front-prime-wrapper { /* Prime spot wrapper => player or splash */
+  width: 660px;
+  border: 1px solid #dbdbdb;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+
+#front-player-header {
+  position: relative;
+  margin: 15px 20px 5px 20px;
+}
+
+#front-player {
+  position: relative;
+  margin: 5px 20px 15px 20px;
+  
+}
+
+#front-metadata {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 140px;
+}
+
+#front-metadata h2 {
+  display: inline;
+}
+
+#front-metadata .country,
+#front-metadata .positioning-method,
+#front-metadata .stats,
+#front-metadata .stats a {
+  color: #808080; 
+}
+
+#front-metadata .data {
+  font-weight: bold;
+}
+
+#front-metadata .stats {
+  margin-top: 15px;
+}
+
+#map-canvas {
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+}
+
+#front-metadata .positioning-method {
+  margin: 5px 0px 20px 0px;
+}
+
+.flag-link {
+  position: absolute;
+  width: 80px;
+  bottom: 0px;
+  right: 60px;
+  margin: 5px 0 5px 355px;
+  font-size: 8pt;
+}
+.flag-link a {
+  color: #808080;
+}
+
+.bambuser-front-video-group {
+  width: 640px;
+  margin: 0px 0px 20px 0px;
+  padding: 20px 10px 10px 10px;
+  
+  border: 1px solid #dbdbdb;
+}
+
+.bambuser-front-video-group h3 {
+  margin: 0px 0px 10px 10px;
+  padding: 0px;
+}
+
+
+#front-featured {
+  width: 620px;
+  padding: 20px;
+}
+
+
+#front-menu {
+  margin: 0px 0px 0px 675px;
+  position: relative;
+  width: 300px;
+}
+
+#front-menu .menubox {
+  width: 258px;
+  position: relative;
+  margin: 20px 0 0 0;
+  padding: 25px 20px 15px 20px;
+  border: 1px solid #dbdbdb;
+}
+
+#front-menu .violetline {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  border: 0px;
+  margin: 0;
+  border-bottom: 4px solid #540f99;
+}
+
+#front-menu div.info-links {
+  margin: 2em 0em 1em 0em;
+}
+
+
+#front-signup-hook {
+  width: 191px;
+  color: #999999;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+#front-menu .introbox-signup div.info-links {
+  width: 199px;
+  margin-top: 4em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#front-menu a.info-link {
+  color: #999999;
+  font-weight: bold;
+  margin: 1em;
+}
+
+#front-menu .introbox-signup a.info-link {
+  display: block;
+  margin-left: 4px;
+}
+
+
+#front-menu .introbox .button-xxlarge {
+  margin-bottom: 10px;
+}
+#front-menu .calendarbox {
+  padding: 0px;
+  width: 298px;
+}
+#front-menu .calendarbox h2 {
+  padding: 20px 20px 15px 20px;
+  margin: 0;
+}
+#front-menu .event {
+  font-weight: bold;
+  position: relative;
+  min-height: 40px;
+  _height: 40px; /* ie-fix */
+  border-top: 1px solid #dbdbdb;
+  padding: 10px 20px 0 60px;
+}
+#front-menu .event-more {
+  border-top: 1px solid #dbdbdb;
+  padding: 20px;
+}
+#front-menu .event .date {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  margin-right: 10px;
+  text-align: center;
+}
+#front-menu .event .date .month {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #cc0000;
+}
+#front-menu .event .date .day {
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+#front-player-header .like {
+  top: auto;
+  bottom: 0px; /* Move button downwards a little bit */
+  right: 160px;
+}
+
+/*
+ * Signup button
+ */
+#front-signup {
+  display: block;
+  width: 199px;
+  height: 58px;
+  margin: 3em;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  background: 0px 0px no-repeat url("signup.png");
+}
+
+#front-signup:hover {
+  background-position: 0px -58px;
+}
+
+#front-signup:active {
+  background-position: 0px -116px;
+}
+
+
+/*
+ * Bambuser V4 CSS. New stuff here.
+ */
+
+/*
+ * New Signup button and paragraph
+ */
+
+#front-signup-b4 {
+  top: 255px;
+  left: 580px;
+  display: block;
+  position: absolute;
+  z-index: 200;
+}
+
+#signup-paragraph {
+  margin: 3px 0 0 1px;
+  padding: 0;
+  font-family: "Kulturista Light", Georgia, serif;
+  font-size: 116.7%;
+}
+
+#signup-facepile {
+  margin: 12px 0 0 1px;
+  padding: 0;
+  font-family: "Kulturista Light", Georgia, serif;
+  font-size: 116.7%;
+}
+
+
+/*
+ * Slideshow, Slideshow navigation
+ */
+
+#nav { margin: 20px auto; }
+#nav a { padding: 4px 6px; margin: 3px; border: 1px solid #ccc; text-align: center; text-decoration: none; background-color: #ddd; }
+#nav a.activeSlide { color: #c00; }
+#nav a:focus { outline: none; }
+
+.slideshow { margin: 0px auto; padding: 0; clear: left; }
+.slideshow, .slide { height: 450px; width: 980px; }
+.slide { margin: 0 0 0 -18px; padding: 0; overflow: visible; width: 1000px; }
+.slideshow img { padding: 0; border: 0; background-color: #fff; margin: 0; float: left; overflow: visible;}
+.slideshow h1 {
+    display: block;
+    width: 400px;
+    float: left;
+    overflow: visible;
+    margin: 85px 0 0 40px;
+    padding: 0;
+    color: #247e35;
+    font-size: 2.667em;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.slideshow h1 a {
+  color: #197b30;
+  text-decoration: underline;
+}
+.slideshow h1 a:hover {
+  color: black;
+}
+
+.slideshow h1 {
+    font-family: 'Kulturista Semibold', Georgia, serif;
+    font-weight: normal;
+}
+
+.slideshow p.description {
+    font-family: 'Kulturista Standard', Georgia, serif;
+    display: block;
+    width: 400px;
+    float: left;
+    overflow: visible;
+    margin: 20px 0 0 40px;
+    padding: 0;
+    color: #888888;
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1.3em;
+    letter-spacing: 0px;
+}
+
+
+
+#bbcontainer {
+    width: 980px;
+    height: 450px;
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+#bbfooter {
+    display: block;
+    width: 980px;
+    margin: auto;
+    background: url("../../../../themes/b4/images/b4/border-dotted.gif") top repeat-x;
+}
+
+#bbfooter .bbfooter-content-box {
+    margin: 10px 0 0 30px;
+    width: 284px;
+    float: left;
+}
+
+#bbfooter h1.bbfooter-header {
+    font-family: 'Kulturista Standard', Georgia, serif;
+    font-weight: normal;
+    font-size: 166.7%;
+    color: #247e35;
+    margin: 0;
+}
+
+#bbfooter p.bbfooter-paragraph {
+    margin: 0.3em 0 0.5em 0;
+    font-family: 'Kulturista Standard', Georgia, serif;
+    font-size: 116%;
+    color: #888;
+    line-height: 1.4em;
+}
+
+#bbfooter a {
+    color: #008aff;
+    text-decoration: underline;
+}
+#bbfooter a:visited {
+    color: #008aff;
+}
+#bbfooter a:hover {
+    color: #222;
+}
+
+.bambuser-social {
+  float: left;
+  width: 130px;
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-top: 6px;
+}
+
+/*
+ * Navigation
+ */
+
+#nav {
+  display: block;
+  width: 80px;
+  padding-left: 40px;
+  margin: auto;
+}
+
+#nav > a {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    text-indent: -9999px;
+    padding: 0px 1px 2px 1px;
+    border: 0;
+    margin: 0.4em 1px 1.4em 1px;
+    background: url("./images/front-slider-nav.png") 0px -42px no-repeat;
+}
+#nav > a.activeSlide {
+    background: url("./images/front-slider-nav.png") 0px 0px no-repeat;
+}
+#nav > a:hover {
+    background: url("./images/front-slider-nav.png") 0px -21px no-repeat;
+}
+
+
+/* Modal Dialog for Bambuser Campaign */
+body.front .ui-dialog-overlay {
+  background: transparent; /* fallback for _ancient_ browsers */
+  background: rgba(233, 233, 233, 0.7); /* safari, opera, ffox, chrome */
+  _background:transparent; /* IE-only */
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#70e9e9e9,endColorstr=#70e9e9e9); /* IE 5.5 - 7 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#70e9e9e9,endColorstr=#70efefef)";  /* IE 8 */
+}
+
+body.front .ui-dialog,
+body.front .ui-dialog-titlebar {
+  background: transparent;
+}
+body.front .ui-dialog {
+  background: url("./popup-bg-backdrop.jpg");
+}
+body.front .ui-dialog .ui-dialog-titlebar {
+  margin-top: 5px;
+  border: 0;
+  height: 50px;
+}
+body.front .ui-dialog .ui-dialog-title {
+  font-family: 'Kulturista Standard', Georgia, serif;
+  font-weight: normal;
+  font-size: 2.1em;
+  text-shadow: 0px 1px 1px #000;
+  -moz-text-shadow: 0px 1px 1px #000;
+  -webkit-text-shadow: 0px 1px 1px #000;
+  padding: 0 20px;
+}
+body.front .ui-dialog hr.divider {
+  background-color: #000;
+  height: 1px;
+  border: 0;
+  margin: 1px 20px 10px 20px;
+  border-bottom: 1px solid #434343;
+}
+body.front .ui-dialog h3 {
+  font-family: 'Kulturista Semibold', Georgia, serif;
+  font-weight: normal;
+  font-size: 1.8em;
+  line-height: 1.2em;
+  padding-right: 40px;
+  color: #00aeef;
+  margin-top: 35px;
+  text-shadow: 0px 1px 1px #000;
+  -moz-text-shadow: 0px 1px 1px #000;
+  -webkit-text-shadow: 0px 1px 1px #000;
+}
+body.front .ui-dialog #right-copy h3 > a {
+  margin: 0;
+  color: #00aeef;
+  text-decoration: none;
+}
+body.front .ui-dialog #right-copy h3 > a:hover {
+  text-decoration: underline;
+}
+body.front .ui-dialog p {
+  font-family: 'Nudista Semibold', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.05em;
+  line-height: 1.45em;
+  color: #eee;
+  text-shadow: 0px 1px 1px #000;
+  -moz-text-shadow: 0px 1px 1px #000;
+  -webkit-text-shadow: 0px 1px 1px #000;
+
+}
+body.front .ui-dialog-titlebar-close {
+  display: block;
+  background: url("/themes/b4/images/b4/interface/button-close.png");
+  width: 68px;
+  height: 23px;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+body.front .ui-dialog-titlebar-close > span {
+  display: none;
+}
+body.front .ui-dialog  a.bambuser-challenge-button {
+  display: block;
+  background: url("./button-bambuserchallenge.tumblr.com.png");
+  width: 332px;
+  height: 41px;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+body.front .ui-dialog #right-copy {
+  width: 385px;
+  float: left;
+}
+body.front .ui-dialog #right-copy p,
+body.front .ui-dialog #right-copy h3,
+body.front .ui-dialog #right-copy a {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+body.front .ui-dialog #right-copy h3 {
+  margin-top: 20px;
+}
+body.front .ui-dialog #left-broadcast {
+  float: left;
+  margin-left: 20px;
+}
+body.front .ui-dialog .player {
+  border: 1px solid #111;
+}
+
+
+
+
+.bambuser-ui-filter-wrapper h3 {
+  color: #808080;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 9pt;
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+.bambuser-ui-filters {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+.bambuser-ui-filters .filter {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 3px 0;
+  font-weight: bold;
+}
+.bambuser-ui-filters .filter ol,
+.bambuser-ui-filters .filter ul {
+  margin: 2px;
+  padding: 0;
+}
+.bambuser-ui-filters .filter ol li,
+.bambuser-ui-filters .filter ul li {
+  list-style-type: none;
+  padding: 0 0 0 10px;
+  font-weight: normal;
+}
+.bambuser-ui-filters .filter-selected a.level1 {
+  color: #000;
+}
+.bambuser-ui-filters .subfilter-selected a {
+  color: #000;
+  font-weight: bold;
+}
+.more-link {
+  padding: 0 10px 0 10px;
+  color: #808080;
+  font-size: 8pt;
+  cursor: pointer;
+}
+
+
+/**
+ * CSS styles for bambuser_ui_tabs() theme function.
+ */
+.bambuser-ui-tabs {
+  float: left;
+  clear: both;
+  margin: 0 0 15px 0;
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px solid #dbdbdb;
+}
+.bambuser-ui-tabs ul {
+  margin: -10px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+.bambuser-ui-tabs ul li {
+  float: left;
+  margin: 10px 0 -1px 0;
+  padding: 0 10px 0 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+.bambuser-ui-tabs ul li .tab-inner {
+  display: block;
+  position: relative;
+  margin: 0 0 10px 0;
+}
+.bambuser-ui-tabs ul li a {
+  display: block;
+  margin: 0 0 -1px 0;
+  padding: 8px 8px 10px 8px;
+  font-weight: bold;
+  background: #e1f4f8;
+  border: 1px solid #fff;
+  border-bottom: 1px solid #dbdbdb;
+  white-space: nowrap;
+}
+.bambuser-ui-tabs ul li.business a {
+  color: #eee;
+  background: #718299;
+}
+.bambuser-ui-tabs ul li.breaking-news a {
+  color: #fff;
+  background: #c33;
+}
+.bambuser-ui-tabs ul li.tab-ajax-selected a {
+  border-top: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  border-bottom: 1px solid #fff;
+  background: none;
+}
+.bambuser-ui-tabs ul li.tab-ajax-selected a {
+  color: #000;
+}
+
+
+/**
+ * CSS styles for bambuser_ui_sorts() theme function.
+ */
+.bambuser-ui-sorts {
+  display: block;
+  margin: 0 0 20px 0;
+  padding: 0px 0 15px 160px;
+  border-bottom: 4px solid #dbdbdb;
+}
+.bambuser-ui-sorts .sort {
+  list-style-type: none;
+  display: inline;
+  position: relative;
+  padding: 0 12px 0 0;
+  margin: 0 28px 10px 0;
+}
+.bambuser-ui-sorts .sort-selected a {
+  color: #000;
+}
+.bambuser-ui-sorts .arrow {
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 0px;
+  width: 7px;
+  height: 5px;
+  background: red;
+}
+.bambuser-ui-sorts .arrow-sort-ascending {
+  background: url(./images/arrows.png) 0px -120px no-repeat;
+}
+.bambuser-ui-sorts .arrow-sort-descending {
+  background: url(./images/arrows.png) 0px -80px no-repeat;
+}
+.bambuser-ui-sorts a:hover .arrow-sort-ascending,
+/* .bambuser-ui-sorts .sort-reversable-clicked a:hover .arrow-sort-descending, */ /* make reversable filter arrows toggle on hover */
+.bambuser-ui-sorts .sort-selected .arrow-sort-ascending {
+  background: url(./images/arrows.png) 0px -40px no-repeat;
+}
+.bambuser-ui-sorts a:hover .arrow-sort-descending,
+/* .bambuser-ui-sorts .sort-reversable-clicked a:hover .arrow-sort-ascending, */ /* make reversable filter arrows toggle on hover */
+.bambuser-ui-sorts .sort-selected .arrow-sort-descending {
+  background: url(./images/arrows.png) 0px -0px no-repeat;
+}
+
+
+/**
+ * CSS styles for bambuser_ui_pager() theme function.
+ */
+.bambuser-ui-pager-wrapper {
+  position: relative;
+  margin: 20px 0 40px 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+.bambuser-ui-pager-wrapper h4 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+}
+.bambuser-ui-pager-wrapper .pager-next {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.bambuser-ui-pager-wrapper .pager-prev {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.bambuser-ui-pager {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.bambuser-ui-pager .pager-item,
+.bambuser-ui-pager .spacer {
+  list-style-type: none;
+  display: inline;
+}
+.bambuser-ui-pager .pager-item,
+.bambuser-ui-pager .spacer,
+.bambuser-ui-pager-wrapper .pager-next,
+.bambuser-ui-pager-wrapper .pager-prev {
+  padding: 0;
+  margin: 2px;
+  padding: 6px 8px;
+}
+.bambuser-ui-pager .pager-item,
+.bambuser-ui-pager-wrapper .pager-next,
+.bambuser-ui-pager-wrapper .pager-prev {
+  cursor:pointer;
+  background: #e1f4f8;
+}
+.bambuser-ui-pager .pager-item-selected {
+  background: none;
+  border: 1px solid #dbdbdb;
+}
+.bambuser-ui-pager-wrapper a {
+  font-weight: bold;
+}
+.bambuser-ui-pager .pager-item-selected a {
+  color: #000;
+}
+.bambuser-ui-pager .pager-item-wide {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+/**
+ * CSS styles for bambuser_ui_user(), bambuser_ui_video() and bambuser_ui_comment() theme functions.
+ */
+.bambuser-ui-container {
+  position: relative;
+  min-height: 140px;
+  _height: 140px; /* ie fix */
+}
+.bambuser-ui-video-small,
+.bambuser-ui-comment-has-preview {
+  position: relative;
+  min-height: 115px;
+  _height: 115px; /* ie fix */
+}
+
+.bambuser-ui-video-small a.preview-wrapper {
+  position: relative;
+  display: block;
+  width: 140px;
+  height: 115px;
+  background: url(no-preview-140x115.png) top left no-repeat;
+}
+
+.bambuser-ui-video-small .preview-wrapper .preview-play {
+  position: absolute;
+  left: 2px;
+  bottom: 1px;
+  width: 25px;
+  height: 20px;
+  background: no-repeat 0px 0px url("images/preview-play-small.png");
+}
+
+.bambuser-ui-video-small .preview-wrapper:hover .preview-play {
+  background-position: 0px -20px;
+}
+
+.bambuser-ui-video-small .preview-wrapper .preview-length {
+  float: right;
+  color: whiteSmoke;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0px 4px 0px 20px;
+  height: 18px;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  display: none;
+}
+.bambuser-ui-video-small .preview-wrapper:hover .preview-length {
+  display: block;
+}
+.bambuser-ui-video-small .preview-wrapper .preview-length span {
+  position: relative;
+  top: 1px;
+}
+
+.bambuser-ui-comment .comment {
+  font-size: 12pt;
+  color: #808080;
+  font-weight: normal;
+}
+
+.bambuser-ui-container-wide {
+  margin: 0 0 20px 0;
+  padding: 20px 10px;
+  border-bottom: 1px solid #dbdbdb;
+}
+.bambuser-ui-container .data,
+.bambuser-ui-container .label {
+  font-weight: bold;
+}
+.bambuser-ui-container h4 {
+  font-size: 11pt;
+  margin: 0px;
+}
+.bambuser-ui-video-wide .preview-wrapper,
+.bambuser-ui-video-wide-verbose .preview-wrapper {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+
+/**
+ * Metadata styles.
+ */
+.metadata {
+  margin: 0px 180px 35px 160px;
+  padding: 0px;
+}
+
+.bambuser-ui-video-small .metadata {
+  margin: 0px;
+  height: 75px;
+  overflow: hidden;
+}
+
+.bambuser-ui-video-splash .metadata {
+  margin: 0px;
+  padding: 1em 0em;
+}
+
+.bambuser-ui-video-splash .metadata .description {
+  color: #808080;
+}
+
+.bambuser-ui-video-splash .metadata .description strong {
+  color: rgb(30,30,30);
+}
+
+
+.metadata-sub,
+.metadata-right,
+.metadata-right-bottom {
+  color: #808080;
+}
+
+.metadata-right {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  min-width: 140px;
+  max-width: 140px;
+  _width: 120px;
+}
+
+.metadata-right-bottom {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  min-width: 140px;
+  max-width: 140px;
+  _width: 120px;
+}
+
+.broadcast-tools {
+  position: absolute;
+  bottom: 40px;
+  left: 170px;
+}
+
+.chat-time-tag {
+  font-weight:normal;
+  font-size: 8pt;
+}
+
+#chat-type {
+  text-align: right;
+  margin: 0px 0px 2px 0px;
+}
+
+.mid {}
+
+.bambuser-ui-group-wide .date,
+.bambuser-ui-event-wide .date,
+.bambuser-ui-user-wide .date {
+  font-weight: bold;
+}
+.bambuser-ui-video-wide-verbose h4,
+.bambuser-ui-comment h4 {
+  font-size: 12pt;
+  margin-left: 10px;
+}
+.bambuser-ui-video-wide-verbose h4 .time {
+  font-size: 9pt;
+  font-weight: normal;
+  color: #808080;
+}
+.bambuser-ui-group-wide .avatar,
+.bambuser-ui-event-wide .avatar,
+.bambuser-ui-user-wide .avatar,
+.bambuser-ui-comment .preview {
+  float: left;
+  margin-right: 20px;
+}
+.bambuser-ui-comment-wide .preview {
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+
+#page a.presentation-more-link {
+  color: #3f8000;
+  font-size: 8pt;
+}
+
+.bambuser-ui-video-small,
+.bambuser-ui-video-splash {
+  float: left;
+  width: 140px;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
+}
+
+a.bambuser-ui-video-small-selected {
+  background: #e4f6f8;
+}
+.bambuser-ui-video-small .time-since {
+  color: #000;
+  font-weight: bold;
+}
+.bambuser-ui-video-small h4 {
+  font-size: 9pt;
+  margin: 0;
+  white-space: nowrap;
+}
+.bambuser-ui-video-small .by-from,
+.bambuser-ui-video-small .by-from a,
+.bambuser-ui-video-small .stats {
+  color: #808080;
+}
+
+.arrow-right {
+  padding-left: 8px;
+  background: url(./images/arrows.png) 0px -156px no-repeat;
+}
+
+#broadcast-header {
+  height: 40px;
+  position: relative;
+}
+.broadcast-header-wrapper2 {
+  height: 30px;
+}
+.broadcast-header-wrapper {
+  display: inline;
+}
+#broadcast-header h1 {
+  float: left;
+  display: block;
+  font-size: 14pt;
+  color: #000;
+}
+#broadcast-header h2 {
+  margin-left: 10px;
+  display: inline;
+  font-size: 14pt;
+  font-weight: normal;
+  color: #000;
+  clear: both;
+}
+#broadcast-header {
+  color: #808080;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 35px;
+  font-size: 9pt;
+}
+.broadcast-header-phone-live {
+  background: url(./images/arrows.png) 0px -395px no-repeat;
+}
+.broadcast-header-phone-archived {
+  background: url(./images/arrows.png) 0px -355px no-repeat;
+}
+.broadcast-header-webcam-live {
+  background: url(./images/arrows.png) 0px -315px no-repeat;
+}
+.broadcast-header-webcam-archived {
+  background: url(./images/arrows.png) 0px -275px no-repeat;
+}
+.preroll-block-dur {}
+.preroll-duration-edit {
+  color: #66cc00;
+}
+.video-title-edit-loader h4 {
+  padding: 2px 10px 2px 0px;
+  margin-bottom: 10px;
+}
+#page .video-title-edit,
+#page .video-title-edit-edited {
+  background: #fbf8d1;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-bottom: 5px;
+}
+#page #broadcast-container-iw #broadcast-section .video-title-edit,
+#page #broadcast-container-iw #broadcast-section .video-title-edit-edited {
+  padding-left: 0em;
+  padding-right: 0em;
+  margin-bottom: 0px;
+}
+.preroll-duration-edit-active,
+#page .video-title-edit-active {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.preroll-duration-edit-hover,
+.video-title-edit-hover,
+.video-title-edit-empty,
+#broadcast-header .video-title-edit-hover,
+#broadcast-header .video-title-edit-empty {
+  color: #cb0000;
+}
+#page #broadcast-container-iw #broadcast-section .video-title-edit-empty {
+  color: #e4164a;
+}
+.bambuser-ui-video .item {
+  margin-bottom: 3px;
+}
+#page .bambuser-ui-video-wide-verbose {
+  min-height: 180px;
+  _height: 180px; /* ie fix */
+}
+#page .bambuser-ui-video-wide-verbose .preview-wrapper,
+#page .bambuser-ui-video-wide-verbose .metadata-right {
+  top: 35px;
+}
+
+.bambuser-ui-video-compactlist {
+  height: 30px;
+  min-height: 30px !important;
+  overflow: hidden;
+  font-size: 9px;
+  margin-bottom: 10px;
+  padding: 4px;
+  border-radius: 4px
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.bambuser-ui-video-compactlist:hover {
+  background-color: #EEE;
+}
+.bambuser-ui-video-compactlist .broadcast-metadata {
+  margin-left: 4px;
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+  top: -30px;
+  left: 40px;
+}
+.bambuser-ui-video-compactlist .preview {
+  background: url('/r/img/defPreview.jpg');
+  background-size: 40px 30px;
+  width: 40px;
+  height: 30px;
+}
+.bambuser-ui-video-compactlist .live {
+  color: red;
+  position: relative;
+  top: -17px;
+  left: 16px;
+  width: 24px;
+  height: 11px;
+  font-size: 9px;
+  padding: 0px 2px 0px 2px;
+  font-weight: bold;
+}
+
+/**
+ * Distinguish between broadcast modes.
+ */
+.bambuser-ui-video .broadcast-mode {
+  display: inline;
+}
+.bambuser-ui-video-mode-2 .broadcast-mode {
+  padding-left: 14px;
+  background: url(./images/lock-s.png) 0px 0px no-repeat;
+}
+.broadcast-header-mode {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #808080;
+  size: 14pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 14px;
+}
+.broadcast-header-mode-2 .broadcast-header-mode {
+  background: url(./images/lock-s.png) 0px 0px no-repeat;
+}
+
+/**
+ * Add icons to filter headlines
+ */
+.filters-headline-country .headline-inner {
+  padding-left: 18px;
+  background: url(/r/img/icons.png) 0px 0px no-repeat;
+}
+.filters-headline-age .headline-inner {
+  padding-left: 18px;
+  background: url(/r/img/icons.png) 0px -36px no-repeat;
+}
+.filters-headline-date .headline-inner {
+  padding-left: 18px;
+  background: url(/r/img/icons.png) 0px -174px no-repeat;
+}
+.filters-headline-device .headline-inner {
+  padding-left: 18px;
+  background: url(/r/img/icons.png) 0px -108px no-repeat;
+}
+
+/*
+ * UI widgets
+ */
+.bambuser-button {
+  height: 2em;
+
+  cursor: pointer;
+
+  margin: 0.2em;
+  padding: 0.2em 0.8em;
+
+  -moz-border-radius: 0.7em;
+  -webkit-border-radius: 0.7em;
+
+  color: rgb(30,30,30);
+  text-shadow: 0.1em 0.1em 0.1em rgba(255,255,255,0.5), -0.1em -0.1em 0.1em rgba(0,0,0,0.15);
+
+  background: rgb(235,235,235);
+}
+
+.bambuser-button:hover {
+  color: rgb(30,150,30);
+  text-shadow: 0em 0em 0.2em rgba(0,255,0,0.8);
+}
+
+.bambuser-button:active {
+  color: rgb(30,200,30);
+  text-shadow: 0em 0em 0.4em rgba(0,255,0,0.8);
+}
+
+
+#edit-tag-dialog {
+  width: 230px;
+  z-index: 20;
+}
+
+#edit-tag-dialog input {
+  border: 1px solid #C5C5C5;
+  color: #555;
+  font-size: 13px;
+  padding: 7px 6px 7px 6px;
+  width: 215px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#edit-tag-dialog .empty {
+  color: #bbb;
+}
+
+#edit-tag-dialog #tag-position {
+  width: 78px;
+  margin-left: 14px;
+  float: right;
+  text-align: right;
+}
+
+#edit-tag-dialog #toggle-tag-position {
+  float: right;
+  width: 14px;
+  cursor: pointer;
+}
+
+#edit-tag-dialog label {
+  font-family: 'Kulturista Standard', Arial, sans-serif;
+  float: right;
+  color: #222;
+}
+
+#edit-tag-dialog label[for='tag-position'] {
+  position: relative;
+  top: 14px;
+}
+
+#edit-tag-dialog label[for='toggle-tag-position'] {
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+}
+
+#edit-tag-dialog .edit-tag-close {
+  float: right;
+  margin-bottom: 5px;
+  color: grey;
+  cursor: pointer;
+}
+
+#edit-tag-dialog .edit-tag-close:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#edit-tag-dialog .edit-tag-buttons {
+  overflow: auto;
+}
+
+#edit-tag-dialog .edit-tag-buttons .edit-tag-remove {
+  float: right;
+}
+
+#edit-tag-dialog .edit-tag-buttons .edit-tag-add {
+  float: left;
+}
+
+#edit-tag-dialog .b-button-small {
+  margin: 0px;
+}
+
+#edit-tag-dialog .suggestions {
+  display: none;
+  width: 229px;
+  background-color: #CCC;
+  max-height: 106px;
+  border-radius: 3px;
+  box-shadow: 0px 1px 5px grey inset;
+  -moz-box-shadow: 0px 1px 5px grey inset;
+  -webkit-box-shadow: 0px 1px 5px grey inset;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  overflow: auto;
+  font-size: 13px;
+  text-shadow: none;
+}
+
+#edit-tag-dialog .suggestions .tag-suggestion {
+  display: block;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+#edit-tag-dialog .suggestions .tag-suggestion:hover {
+  background-color: #606060;
+  color: whitesmoke;
+}
+
+/*
+ * OpenInviter / Invite
+ */
+.bambuser-oi-content {
+  position: relative;
+  overflow: hidden;
+}
+
+.bambuser-oi-services {
+  text-align: center;
+}
+
+.bambuser-oi-service {
+  cursor: pointer;
+}
+
+.bambuser-oi-service-selected {
+  font-weight: bold;
+}
+
+.bambuser-oi-contact {
+  display: block;
+  margin: 0.5em 0em;
+  padding: 0.8em;
+  cursor: pointer;
+}
+.bambuser-oi-contact .bambuser-oi-name {
+  color: #00B6F1;
+}
+.bambuser-oi-contact:hover {
+  background-color: whiteSmoke;
+}
+.bambuser-oi-contacts-add-all {
+  cursor: pointer;
+  color: #00B6F1;
+  margin-left: 10px;
+}
+#bambuser-oi-login-form {
+  padding: 1em 0em;
+}
+
+.bambuser-oi-email {
+  font-style: italic;
+  color: rgb(119,119,119);
+}
+
+#invite-form fieldset {
+  margin-left: 0em;
+  margin-right: 0em;
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+
+/*
+ * JQuery UI
+ */
+.ui-dialog {
+  background: white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
+  -moz-box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
+  border: 1px solid rgb(219,219,219);
+}
+.ui-dialog-titlebar {
+  height: 2em;
+  cursor: move;
+  background: rgb(102,204,0);
+  border-bottom: 4px solid rgb(82,162,1);
+}
+.ui-dialog-title {
+  padding: 0em 1em;
+  color: white;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.ui-dialog-titlebar-close {
+  position: absolute;
+  right: 0.4em;
+  top: 0.4em;
+  text-align: right;
+}
+
+.tooltip {
+  background-color: #E1F4F8;
+  color: #000000;
+  font-size:13px;
+  font-family:verdana;
+  border:solid 1px #DBDBDB;
+  z-index:100;
+  padding: 10px 10px 10px 10px;
+  margin: 0px 0px 0px 0px;
+}
+
+.tooltip p {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.processing {
+  color: #515151;
+}
+
+
+#bambuser-contact-wrapper {
+  position:absolute;
+  bottom: 50px;
+  left: 0px;
+  z-index: 50;
+}
+#bambuser-contact {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 40px 20px 30px 20px;
+  height: 420px;
+  width: 310px;
+  background: #fff;
+  display:none;
+  z-index: 5;
+}
+#bambuser-contact-border {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 350px;
+  height: 490px;
+  background: #737373;
+  padding: 10px;
+  opacity: .50;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  display:none;
+  z-index: 4;
+}
+#bambuser-contact .form-textarea,
+#bambuser-contact .form-text {
+  width: 300px;
+  z-index: 7;
+}
+#bambuser-contact .form-textarea {
+  resize: none;
+}
+#bambuser-contact-link {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 25px;
+  height: 100px;
+  display:block;
+  cursor:pointer;
+  z-index: 3;
+}
+#bambuser-contact-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 6;
+  width: 30px;
+  height: 30px;
+  background: url(../../pages/bambuser_dashboard/images/settings.png) 0px -136px no-repeat;
+  cursor:pointer;
+}
+
+
+/* $Id: layout-fixed.css,v 1.1.2.7 2008/01/28 17:41:35 johnalbin Exp $ */
+
+/*
+ * LAYOUT STYLES
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout is based on the Border Politics Layout Method.
+ *   http://drupal.org/node/201428
+ *
+ * Only CSS that affects the layout (positioning) of major elements should be
+ * listed here.  Such as:
+ *   display, position, float, clear, width, height, min-width, min-height
+ *   margin, border, padding, overflow
+ */
+
+
+/** body **/
+  body
+  {
+    margin: 0;
+    padding: 10px;
+  }
+
+  #page
+  {
+    /*
+     * If you want to make the page a fixed width and centered in the viewport,
+     * this is the standards-compliant way to do that. See also the ie.css file
+     * for the necessary IE5 hack to center a div.
+     */
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+  }
+
+  #page-inner
+  {
+  }
+
+  #navigation-top,
+  #navigation
+  {
+    position: absolute; /* Take the named anchors out of the doc flow    */
+    left: -10000px;     /* and prevent any anchor styles from appearing. */
+  }
+
+/** header **/
+  #header
+  {
+  }
+
+  #header-inner
+  {
+  }
+
+/** main (container for everything else) **/
+  #main
+  {
+    position: relative;
+  }
+
+  #main-inner
+  {
+    margin: 0px 20px;
+  }
+
+/** content **/
+  #content,
+  .two-sidebars #content
+  {
+    float: left;
+    width: 360px;
+    margin-left: 300px; /* The width of #sidebar-left */
+    margin-right: -660px; /* Negative value of #content's width + left margin. */
+    padding: 0; /* DO NOT CHANGE. Add padding or margin to #content-inner. */
+  }
+
+  .sidebar-left #content
+  {
+    width: 640px;
+    margin-left: 300px; /* The width of #sidebar-left. */
+    margin-right: -980px; /* Negative value of #content's width + left margin. */
+  }
+
+  .sidebar-right #content
+  {
+    width: 640px;
+    margin-left: 0;
+    margin-right: -640px; /* Negative value of #content's width + left margin. */
+  }
+
+  .no-sidebars #content
+  {
+    width: 940px;
+    margin-left: 0;
+    margin-right: -940px; /* Negative value of #content's width + left margin. */
+  }
+
+  #content-inner
+  {
+    margin: 0;
+    padding: 0;
+  min-height: 300px;
+  }
+
+
+/** sidebar-left **/
+  #sidebar-left
+  {
+    float: left;
+    width: 300px;
+    margin-left: 0;
+    margin-right: -300px; /* Negative value of #sidebar-left's width + left margin. */
+    padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-left-inner. */
+  }
+
+  #sidebar-left-inner
+  {
+    margin: 0 20px 0 0;
+    padding: 0;
+  }
+
+/** sidebar-right **/
+  #sidebar-right
+  {
+    float: left;
+    width: 300px;
+    margin-left: 660px; /* Width of content + sidebar-left. */
+    margin-right: -940px; /* Negative value of #sidebar-right's width + left margin. */
+    padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-right-inner. */
+  }
+
+  #sidebar-right-inner
+  {
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
+
+/** footer **/
+  #footer
+  {
+  }
+
+  #footer-inner
+  {
+  }
+
+  #closure-blocks
+  {
+  }
+
+/** Prevent overflowing content **/
+  #header,
+  #content,
+  #navbar,
+  #sidebar-left,
+  #sidebar-right,
+  #footer,
+  #closure-blocks
+  {
+    overflow: visible;
+    word-wrap: break-word; /* A very nice CSS3 property */
+  }
+
+
+  /* $Id: html-elements.css,v 1.1.2.1 2007/11/29 00:50:59 johnalbin Exp $ */
+
+/****
+ **** HTML ELEMENT STYLING
+ ****/
+
+/** fonts **/
+
+
+  /* 
+   * These are the font declarations for the new Bambuser typefaces.
+   * For more info, check case 10277.
+   *
+   * Kulturista Standard
+   * -------------------
+   * Use for 9px to 16px sizes. The bold version of this version can get too heavy 
+   * in many cases. That's when Kulturista Large should be used.
+   * 
+   * Kulturista Semibold
+   * -------------------
+   * Use for 16px+ sizes (headers) when the Bold version of Kulturista Standard 
+   * gets too bold. The bold in this one is the semibold weight.
+   * 
+   * Kulturista Light
+   * ----------------
+   * Use if/when needed. Very sparingly used in IW design sketches.
+   *
+   * 
+   * Nudista Standard 
+   * ----------------
+   * Use for 9px to 16px sizes. The bold version of this version can get too heavy 
+   * in many cases. That's when Kulturista Large should be used.
+   * 
+   * Nudista Semibold 
+   * ----------------
+   * This one does not have real use as for now, but is here for possible future use.
+   * 
+   * Nudista Light 
+   * -------------
+   * Use when needed. Sparingly used in IW design sketches.
+   *
+   *
+   *
+   * Read more about this font embedding method here:
+   * http://www.fontspring.com/blog/further-hardening-of-the-bulletproof-syntax
+   *
+   * Generated by Font Squirrel (http://www.fontsquirrel.com) on February 24, 2011 
+   * The WebOnly feature was used, which means these fonts are now secured for web
+   * use only, as the license demands.
+   * 
+   */
+
+   /* Kulturista font declaration */
+
+
+   @font-face {
+      font-family: 'Kulturista Standard';
+      src:  url('../../r/font/kulturista/kulturista_bold_italic-webfont.eot');
+      src:  url('../../r/font/kulturista/kulturista_bold_italic-webfont.eot?iefix') format('eot'),
+            url('../../r/font/kulturista/kulturista_bold_italic-webfont.woff') format('woff'),
+            url('../../r/font/kulturista/kulturista_bold_italic-webfont.ttf') format('truetype'),
+            url('../../r/font/kulturista/kulturista_bold_italic-webfont.svg#webfont6yhh6ChX') format('svg');
+      font-weight: bold;
+      font-style: italic;
+   }   
+   @font-face {
+      font-family: 'Kulturista Standard';
+      src:  url('../../r/font/kulturista/kulturista_bold-webfont.eot');
+      src:  url('../../r/font/kulturista/kulturista_bold-webfont.eot?iefix') format('eot'),
+            url('../../r/font/kulturista/kulturista_bold-webfont.woff') format('woff'),
+            url('../../r/font/kulturista/kulturista_bold-webfont.ttf') format('truetype'),
+            url('../../r/font/kulturista/kulturista_bold-webfont.svg#webfont1y4zLvHb') format('svg');
+      font-weight: bold;
+      font-style: normal;
+   }
+   @font-face {
+      font-family: 'Kulturista Standard';
+      src:  url('../../r/font/kulturista/kulturista_medium-webfont.eot');
+      src:  url('../../r/font/kulturista/kulturista_medium-webfont.eot?iefix') format('eot'),
+            url('../../r/font/kulturista/kulturista_medium-webfont.woff') format('woff'),
+            url('../../r/font/kulturista/kulturista_medium-webfont.ttf') format('truetype'),
+            url('../../r/font/kulturista/kulturista_medium-webfont.svg#webfontga3LpUaS') format('svg');
+      font-weight: normal;
+      font-style: normal;
+   }
+   @font-face {
+      font-family: 'Kulturista Standard';
+      src:  url('../../r/font/kulturista/kulturista_medium_italic-webfont.eot');
+      src:  url('../../r/font/kulturista/kulturista_medium_italic-webfont.eot?iefix') format('eot'),
+            url('../../r/font/kulturista/kulturista_medium_italic-webfont.woff') format('woff'),
+            url('../../r/font/kulturista/kulturista_medium_italic-webfont.ttf') format('truetype'),
+            url('../../r/font/kulturista/kulturista_medium_italic-webfont.svg#webfont9y2fqXrR') format('svg');
+      font-weight: normal;
+      font-style: italic;
+   }
+
+   
+   @font-face {
+      font-family: 'Kulturista Semibold';
+      src:  url('../../r/font/kulturista/kulturista_semibold_italic-webfont.eot');
+      src:  url('../../r/font/kulturista/kulturista_semibold_italic-webfont.eot?iefix') format('eot'),
+            url('../../r/font/kulturista/kulturista_semibold_italic-webfont.woff') format('woff'),
+            url('../../r/font/kulturista/kulturista_semibold_italic-webfont.ttf') format('truetype'),
+            url('../../r/font/kulturista/kulturista_semibold_italic-webfont.svg#webfontkjdBfaGW') format('svg');
+      font-weight: normal;
+      font-style: italic;
+   }
+   @font-face {
+      font-family: 'Kulturista Semibold';
+      src:  url('../../r/font/kulturista/kulturista_semibold-webfont.eot');
+      src:  url('../../r/font/kulturista/kulturista_semibold-webfont.eot?iefix') format('eot'),
+            url('../../r/font/kulturista/kulturista_semibold-webfont.woff') format('woff'),
+            url('../../r/font/kulturista/kulturista_semibold-webfont.ttf') format('truetype'),
+            url('../../r/font/kulturista/kulturista_semibold-webfont.svg#webfontVXANeCHd') format('svg');
+      font-weight: normal;
+      font-style: normal;
+   }
+   @font-face {
+      font-family: 'Kulturista Semibold';
+      src:  url('../../r/font/kulturista/kulturista_bold_italic-webfont.eot');
+      src:  url('../../r/font/kulturista/kulturista_bold_italic-webfont.eot?iefix') format('eot'),
+            url('../../r/font/kulturista/kulturista_bold_italic-webfont.woff') format('woff'),
+            url('../../r/font/kulturista/kulturista_bold_italic-webfont.ttf') format('truetype'),
+            url('../../r/font/kulturista/kulturista_bold_italic-webfont.svg#webfont6yhh6ChX') format('svg');
+      font-weight: bold;
+      font-style: italic;
+   }   
+   @font-face {
+      font-family: 'Kulturista Semibold';
+      src:  url('../../r/font/kulturista/kulturista_bold-webfont.eot');
+      src:  url('../../r/font/kulturista/kulturista_bold-webfont.eot?iefix') format('eot'),
+            url('../../r/font/kulturista/kulturista_bold-webfont.woff') format('woff'),
+            url('../../r/font/kulturista/kulturista_bold-webfont.ttf') format('truetype'),
+            url('../../r/font/kulturista/kulturista_bold-webfont.svg#webfont1y4zLvHb') format('svg');
+      font-weight: bold;
+      font-style: normal;
+   }
+
+
+
+   @font-face {
+      font-family: 'Kulturista Light';
+      src:  url('../../r/font/kulturista/kulturista_light-webfont.eot');
+      src:  url('../../r/font/kulturista/kulturista_light-webfont.eot?iefix') format('eot'),
+            url('../../r/font/kulturista/kulturista_light-webfont.woff') format('woff'),
+            url('../../r/font/kulturista/kulturista_light-webfont.ttf') format('truetype'),
+            url('../../r/font/kulturista/kulturista_light-webfont.svg#webfonteiFfWVUT') format('svg');
+      font-weight: normal;
+      font-style: normal;
+   }
+   @font-face {
+      font-family: 'Kulturista Light';
+      src:  url('../../r/font/kulturista/kulturista_light_italic-webfont.eot');
+      src:  url('../../r/font/kulturista/kulturista_light_italic-webfont.eot?iefix') format('eot'),
+            url('../../r/font/kulturista/kulturista_light_italic-webfont.woff') format('woff'),
+            url('../../r/font/kulturista/kulturista_light_italic-webfont.ttf') format('truetype'),
+            url('../../r/font/kulturista/kulturista_light_italic-webfont.svg#webfontK2Te9oyI') format('svg');
+      font-weight: normal;
+      font-style: italic;
+   }
+      @font-face {
+      font-family: 'Kulturista Light';
+      src:  url('../../r/font/kulturista/kulturista_medium-webfont.eot');
+      src:  url('../../r/font/kulturista/kulturista_medium-webfont.eot?iefix') format('eot'),
+            url('../../r/font/kulturista/kulturista_medium-webfont.woff') format('woff'),
+            url('../../r/font/kulturista/kulturista_medium-webfont.ttf') format('truetype'),
+            url('../../r/font/kulturista/kulturista_medium-webfont.svg#webfontga3LpUaS') format('svg');
+      font-weight: bold;
+      font-style: normal;
+   }
+   @font-face {
+      font-family: 'Kulturista Light';
+      src:  url('../../r/font/kulturista/kulturista_medium_italic-webfont.eot');
+      src:  url('../../r/font/kulturista/kulturista_medium_italic-webfont.eot?iefix') format('eot'),
+            url('../../r/font/kulturista/kulturista_medium_italic-webfont.woff') format('woff'),
+            url('../../r/font/kulturista/kulturista_medium_italic-webfont.ttf') format('truetype'),
+            url('../../r/font/kulturista/kulturista_medium_italic-webfont.svg#webfont9y2fqXrR') format('svg');
+      font-weight: bold;
+      font-style: italic;
+   }
+
+
+
+   /* Nudista font declaration */
+
+   @font-face {
+      font-family: 'Nudista Standard';
+      src:  url('../../r/font/nudista/nudista_bold-webfont.eot');
+      src:  url('../../r/font/nudista/nudista_bold-webfont.eot?iefix') format('eot'),
+            url('../../r/font/nudista/nudista_bold-webfont.woff') format('woff'),
+            url('../../r/font/nudista/nudista_bold-webfont.ttf') format('truetype'),
+            url('../../r/font/nudista/nudista_bold-webfont.svg#webfontZjRt1THx') format('svg');
+      font-weight: bold;
+      font-style: normal;
+   }
+   @font-face {
+      font-family: 'Nudista Standard';
+      src:  url('../../r/font/nudista/nudista_bold_italic-webfont.eot');
+      src:  url('../../r/font/nudista/nudista_bold_italic-webfont.eot?iefix') format('eot'),
+            url('../../r/font/nudista/nudista_bold_italic-webfont.woff') format('woff'),
+            url('../../r/font/nudista/nudista_bold_italic-webfont.ttf') format('truetype'),
+            url('../../r/font/nudista/nudista_bold_italic-webfont.svg#webfontxWLuUrNq') format('svg');
+      font-weight: bold;
+      font-style: italic;
+   }
+   @font-face {
+      font-family: 'Nudista Standard';
+      src:  url('../../r/font/nudista/nudista_medium-webfont.eot');
+      src:  url('../../r/font/nudista/nudista_medium-webfont.eot?iefix') format('eot'),
+            url('../../r/font/nudista/nudista_medium-webfont.woff') format('woff'),
+            url('../../r/font/nudista/nudista_medium-webfont.ttf') format('truetype'),
+            url('../../r/font/nudista/nudista_medium-webfont.svg#webfontepAd8iMy') format('svg');
+      font-weight: normal;
+      font-style: normal;
+   }
+   @font-face {
+      font-family: 'Nudista Standard';
+      src:  url('../../r/font/nudista/nudista_medium_italic-webfont.eot');
+      src:  url('../../r/font/nudista/nudista_medium_italic-webfont.eot?iefix') format('eot'),
+            url('../../r/font/nudista/nudista_medium_italic-webfont.woff') format('woff'),
+            url('../../r/font/nudista/nudista_medium_italic-webfont.ttf') format('truetype'),
+            url('../../r/font/nudista/nudista_medium_italic-webfont.svg#webfontef024sVC') format('svg');
+      font-weight: normal;
+      font-style: italic;
+   }
+
+   @font-face {
+      font-family: 'Nudista Semibold';
+      src:  url('../../r/font/nudista/nudista_bold-webfont.eot');
+      src:  url('../../r/font/nudista/nudista_bold-webfont.eot?iefix') format('eot'),
+            url('../../r/font/nudista/nudista_bold-webfont.woff') format('woff'),
+            url('../../r/font/nudista/nudista_bold-webfont.ttf') format('truetype'),
+            url('../../r/font/nudista/nudista_bold-webfont.svg#webfontZjRt1THx') format('svg');
+      font-weight: bold;
+      font-style: normal;
+   }
+   @font-face {
+      font-family: 'Nudista Semibold';
+      src:  url('../../r/font/nudista/nudista_bold_italic-webfont.eot');
+      src:  url('../../r/font/nudista/nudista_bold_italic-webfont.eot?iefix') format('eot'),
+            url('../../r/font/nudista/nudista_bold_italic-webfont.woff') format('woff'),
+            url('../../r/font/nudista/nudista_bold_italic-webfont.ttf') format('truetype'),
+            url('../../r/font/nudista/nudista_bold_italic-webfont.svg#webfontxWLuUrNq') format('svg');
+      font-weight: bold;
+      font-style: italic;
+   }
+   @font-face {
+      font-family: 'Nudista Semibold';
+      src:  url('../../r/font/nudista/nudista_semibold-webfont.eot');
+      src:  url('../../r/font/nudista/nudista_semibold-webfont.eot?iefix') format('eot'),
+            url('../../r/font/nudista/nudista_semibold-webfont.woff') format('woff'),
+            url('../../r/font/nudista/nudista_semibold-webfont.ttf') format('truetype'),
+            url('../../r/font/nudista/nudista_semibold-webfont.svg#webfontLZ2vnm9x') format('svg');
+      font-weight: normal;
+      font-style: normal;
+   }
+   @font-face {
+      font-family: 'Nudista Semibold';
+      src:  url('../../r/font/nudista/nudista_semibold_italic-webfont.eot');
+      src:  url('../../r/font/nudista/nudista_semibold_italic-webfont.eot?iefix') format('eot'),
+            url('../../r/font/nudista/nudista_semibold_italic-webfont.woff') format('woff'),
+            url('../../r/font/nudista/nudista_semibold_italic-webfont.ttf') format('truetype'),
+            url('../../r/font/nudista/nudista_semibold_italic-webfont.svg#webfontOcevwLC0') format('svg');
+      font-weight: normal;
+      font-style: italic;
+   }
+
+
+   @font-face {
+      font-family: 'Nudista Light';
+      src:  url('../../r/font/nudista/nudista_medium-webfont.eot');
+      src:  url('../../r/font/nudista/nudista_medium-webfont.eot?iefix') format('eot'),
+            url('../../r/font/nudista/nudista_medium-webfont.woff') format('woff'),
+            url('../../r/font/nudista/nudista_medium-webfont.ttf') format('truetype'),
+            url('../../r/font/nudista/nudista_medium-webfont.svg#webfontepAd8iMy') format('svg');
+      font-weight: bold;
+      font-style: normal;
+   }
+   @font-face {
+      font-family: 'Nudista Light';
+      src:  url('../../r/font/nudista/nudista_medium_italic-webfont.eot');
+      src:  url('../../r/font/nudista/nudista_medium_italic-webfont.eot?iefix') format('eot'),
+            url('../../r/font/nudista/nudista_medium_italic-webfont.woff') format('woff'),
+            url('../../r/font/nudista/nudista_medium_italic-webfont.ttf') format('truetype'),
+            url('../../r/font/nudista/nudista_medium_italic-webfont.svg#webfontef024sVC') format('svg');
+      font-weight: bold;
+      font-style: italic;
+   }
+   @font-face {
+      font-family: 'Nudista Light';
+      src:  url('../../r/font/nudista/nudista_light-webfont.eot');
+      src:  url('../../r/font/nudista/nudista_light-webfont.eot?iefix') format('eot'),
+            url('../../r/font/nudista/nudista_light-webfont.woff') format('woff'),
+            url('../../r/font/nudista/nudista_light-webfont.ttf') format('truetype'),
+            url('../../r/font/nudista/nudista_light-webfont.svg#webfontnlj6c5YF') format('svg');
+      font-weight: normal;
+      font-style: normal;
+   }
+   @font-face {
+      font-family: 'Nudista Light';
+      src:  url('../../r/font/nudista/nudista_light_italic-webfont.eot');
+      src:  url('../../r/font/nudista/nudista_light_italic-webfont.eot?iefix') format('eot'),
+            url('../../r/font/nudista/nudista_light_italic-webfont.woff') format('woff'),
+            url('../../r/font/nudista/nudista_light_italic-webfont.ttf') format('truetype'),
+            url('../../r/font/nudista/nudista_light_italic-webfont.svg#webfont08b8OWvs') format('svg');
+      font-weight: normal;
+      font-style: italic;
+   }
+   
+
+
+
+    
+  /*
+   * Our font size and line height declarations are based on the following ALA
+   * article:
+   *   http://www.alistapart.com/articles/howtosizetextincss
+   *
+   * All modern browsrs use a 16px default font size. Specifying the font-size
+   * and line-height in ems (relative to the 16px default font) allows the user
+   * to resize the font in the browser and produces the most consistent results
+   * across different browsers.
+   */
+  body
+  {
+    font-size: 100%; /* Fixes exaggerated text resizing in IE6 and IE7 */
+  }
+
+  #page
+  {
+    /*
+     * To use a 12px font size on the page, delete the 14px declarations.
+     * to use a 14px font size on the page, delete the 12px declarations.
+     */
+
+    /* Use a 12px base font size with a 16px line height */
+    /* font-size: 0.75em; */ /* 16px x .75 = 12px */
+    /* line-height: 1.333em; */ /* 12px x 1.333 = 16px */
+
+    /* Use a 14px base font size with a 18px line height */
+    font-size: 0.875em; /* 16px x .875 = 14px */
+    line-height: 1.286em; /* 14px x 1.286 = 18px */
+  }
+
+  body, caption, th, td, input, textarea, select, option, legend, fieldset
+  {
+    /* The following font family declarations are based on the Microsoft core
+     * web fonts which are common fonts available on most computer systems. The
+     * Bitstream Vera fonts are commonly available on Linux systems where the MS
+     * fonts are less common.
+     *
+     * A user's web browser will look at the comma-separated list and will
+     * attempt to use each font in turn until it finds one that is available
+     * on the user's computer. The final "generic" font (sans-serif or serif)
+     * hints at what type of font to use if the web browser doesn't find any
+     * of the fonts in the list.
+
+    font-family: "Times New Roman", Times, Georgia, "Bitstream Vera Serif", serif;
+    font-family: Times, "Times New Roman", Georgia, "Bitstream Vera Serif", serif;
+    font-family: Georgia, "Times New Roman", "Bitstream Vera Serif", serif;
+
+    font-family: Verdana, Tahoma, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+    font-family: Tahoma, Verdana, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+    font-family: Helvetica, Arial, "Bitstream Vera Sans", sans-serif;
+    font-family: Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+
+    font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;
+
+     */
+
+    /*font-family: Tahoma, Verdana, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;*/
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+
+  pre, code
+  {
+    font-size: 1.1em; /* Monospace fonts can be hard to read */
+    /*font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;*/
+  font-family: "Monaco", "Bitstream Vera Sans Mono", "Courier New", monospace;
+  }
+
+/** headings **/
+  h1
+  {
+    font-size: 2em;
+    line-height: 1.3em;
+    margin-top: 0;
+    margin-bottom: 0.5em; /* 0.5em is equavalent to 1em in the page's base font.
+                             Remember, a margin specified in ems is relative to
+                             the element's font-size, not to the pages' base
+                             font size. So, for example, if we want a 1em margin
+                             (relative to the base font), we have to divide that
+                             length by the element's font-size:
+                             1em / 2em = 0.5em */
+  }
+
+  h2
+  {
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin-top: 0.667em; /* Equivalent to 1em in the page's base font: 1 / 1.5 = 0.667em */
+    margin-bottom: 0.667em;
+  }
+
+  h3
+  {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin-top: 0.769em; /* Equivalent to 1em in the page's base font: 1 / 1.3 = 0.769 */
+    margin-bottom: 0.769em;
+  }
+
+  h4, h5, h6
+  {
+    font-size: 1.1em;
+    line-height: 1.3em;
+    margin-top: 0.909em; /* Equivalent to 1em in the page's base font: 1 / 1.1 = 0.909 */
+    margin-bottom: 0.909em;
+  }
+
+
+
+/** lists **/
+  /* standardize list item indentation */
+  ul, ol
+  {
+    margin-left: 0;
+    padding-left: 2em;
+  }
+
+  .block ul, /* Drupal overrides */
+  .item-list ul
+  {
+    margin: 1em 0;
+    padding: 0 0 0 2em;
+  }
+
+  ul ul, ul ol,
+  ol ol, ol ul,
+  .block ul ul, .block ul ol,
+  .block ol ol, .block ol ul,
+  .item-list ul ul, .item-list ul ol,
+  .item-list ol ol, .item-list ol ul
+  {
+    margin: 0;
+  }
+
+  li
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  .item-list ul li /* Drupal override */
+  {
+    margin: 0;
+    padding: 0;
+    list-style: inherit;
+  }
+
+  ul.menu li, /* Drupal override */
+  li.expanded,
+  li.collapsed,
+  li.leaf
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul          { list-style-type: disc; }
+  ul ul       { list-style-type: circle; }
+  ul ul ul    { list-style-type: square; }
+  ul ul ul ul { list-style-type: circle; }
+  ol          { list-style-type: decimal; }
+  ol ol       { list-style-type: lower-alpha; }
+  ol ol ol    { list-style-type: decimal; }
+
+  dt
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  dd
+  {
+    margin: 0 0 0 2em;
+    padding: 0;
+  }
+
+/** links **/
+  /* The order of link states are based on Eric Meyer's article:
+   * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
+   */
+  a:link
+  {
+  }
+
+  a:visited
+  {
+  }
+
+  a:hover,
+  a:focus
+  {
+  }
+
+  a:active
+  {
+  }
+
+
+  
+/** abbreviations **/
+  abbr
+  {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+    white-space: nowrap;
+  }
+
+  /* Date-based "abbreviations" show computer-friendly timestamps which are not
+     human-friendly. */
+  abbr.created
+  {
+    border: none;
+    cursor: auto;
+    white-space: normal;
+  }
+
+/** images **/
+  img
+  {
+    border: 0;
+  }
+
+/** horizontal rules **/
+  hr
+  {
+    height: 1px;
+    border: 1px solid #666;
+  }
+
+/** forms **/
+  form
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  fieldset
+  {
+    margin: 1em 0;
+    padding: 0.5em;
+  }
+
+
+
+  /* $Id: zen.css,v 1.1.2.26 2008/04/20 04:22:15 johnalbin Exp $ */
+
+/*
+* ZEN STYLES
+*
+* This is an example stylesheet. Sub-themes should NOT include the zen/zen.css
+* file, but instead copy this CSS to their own stylesheets.
+*
+* In this stylesheet, we have included all of the classes and IDs from this
+* theme's tpl.php files. We have also included many of the useful Drupal core
+* styles to make it easier for theme developers to see them.
+*
+* Many of these styles are over-riding Drupal's core stylesheets, so if you
+* remove a declaration from here, the styles may still not be what you want
+* since Drupal's core stylesheets are still styling the element. See the
+* drupal5-reference.css file for a list of all Drupal 5.x core styles.
+*
+* In addition to the style declarations in this file, other Drupal styles that
+* you might want to override or augment are those for:
+*
+*   Book Navigation  See line 74  of Zen's drupal5-reference.css file
+*   Forum            See line 197 of Zen's drupal5-reference.css file
+*   Menus            See line 667 of Zen's drupal5-reference.css file
+*   News Aggregator  See line 20  of Zen's drupal5-reference.css file
+*   Polls            See line 287 of Zen's drupal5-reference.css file
+*   Search           See line 320 of Zen's drupal5-reference.css file
+*   User Profiles    See line 945 of Zen's drupal5-reference.css file
+*/
+
+/** body **/
+body {
+  margin: 0em;
+  padding: 0em;
+  background: white;
+  background: url('./images/b4/bambuser-bamberoll.png') repeat-x top white;
+}
+
+body,
+p,
+td,
+tr,
+th,
+input,
+textarea,
+select,
+option,
+label {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+p {
+  font-size: 9pt;
+}
+
+a {
+  color: #197b30;
+  text-decoration: none;
+}
+
+/* overriding /b/bambuser.css */
+
+body.section-broadcasts #broadcasts-main .metadata h4 > a,
+body.section-dashboard .menubox ul > li > a,
+body.section-dashboard .menubox ul > li p > a,
+body.section-channel #profile-menu a,
+body.section-groups-events #ge-main a,
+body.section-users #users-main a,
+.b-link {
+  color: #197b30 !important;
+}
+
+#page {
+}
+
+#page-inner {
+}
+
+/** 
+ * Header
+ */
+#header {
+  margin-top: 10px;
+  position: relative;
+  background: url("./images/b4/border-dotted.gif") bottom repeat-x;
+  padding-bottom: 7px;
+  margin: 7px 0 7px 0;
+}
+
+#header-inner {
+  height: 90px;
+  position: relative;
+}
+.christmas-header {
+  background: transparent url("./images/b4/header-christmas.png") 0 11px no-repeat;
+}
+
+body.business #header-inner {
+  /* border-bottom: 4px solid #0052a2;
+  background: #0099cc; */
+}
+
+#logo { /* Wrapper for logo */
+  position: absolute;
+  top: 45px;
+  left: 0px;
+  width: 170px;
+  height: 36px;
+}
+
+#page #top-search {
+  position: absolute;
+  width:560px;
+  top: 22px;
+  right: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#page #top-search form {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+#page #top-search input {
+  font-family: 'Kulturista Standard', Georgia, sans-serif;
+  margin: 0px;
+  border: 0;
+  font-size: 1em; /* 12px */
+   color: #247e35;
+}
+
+#page #top-search .form-text {
+
+  padding: 0 6px 0 6px;
+  width: 165px; /* Input field scales. Change width up to 280px */
+  height: 30px; /* total: 20px */
+  position: absolute;
+  top: 0px;
+  right: 40px;
+}
+
+#page #top-search .top-search-submit {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 140px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+}
+
+/**
+ * Header menu
+ */
+.bambuser-header-menu {
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+    font-family: 'Kulturista Standard', Georgia, serif;
+    font-weight: normal;
+    font-size: 166.7%;
+    color: #247e35;
+    margin: 0;
+}
+
+.bambuser-header-menu li {
+  display: block;
+  float: left;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bambuser-header-menu a {
+  display: block;
+  margin: 0 10px 4px  0;
+  padding: 3px; /* easier for user to hit the links when there's a bit of padding */
+  white-space: nowrap;
+
+    font-family: 'Kulturista Standard', Georgia, serif;
+    font-weight: normal;
+    font-size: 107%;
+    color: #247e35;
+    margin: 0;
+
+}
+
+.bambuser-header-menu a:hover {
+  text-decoration: underline;
+}
+
+.bambuser-header-menu a span { /* Not a very nice hack, but seems like we have to support IE */
+  position: relative;
+  display: inline;
+
+  margin-left: 15px;
+  margin-right: -15px;
+}
+
+body.business .bambuser-header-menu a,
+body.business .bambuser-header-menu a span {
+
+}
+
+body.business .bambuser-header-menu a:hover {
+
+
+}
+
+#menu-a {
+  left: 224px;
+  bottom: 6px; /* align to bottom of logotype: bottom: 2px;*/
+  font-size: 1.5em; /* equals 18px (18px/12px) */
+  margin-bottom: 20px;
+
+}
+
+#menu-b {
+  right: 0px;
+  bottom: 4px; /* align to bottom of logotype: bottom: 0px; */
+  font-size: 1.083em; /* equals 13px */
+  letter-spacing: 0px;
+  color: #393939;
+}
+
+#menu-b li.last > a {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.bambuser-header-menu .selected a,
+body.business .bambuser-header-menu .selected a {
+/*  color: #11822b; */ /* Original: #197b30. Making it more vibrant due to antialiasing. */}
+
+
+/**
+ * Main (container for everything else)
+ */
+#main {
+  background: #fff;
+}
+
+#main-inner {
+}
+
+/**
+ * Content
+ */
+#content {
+}
+
+#content-inner {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#content-top { /* Wrapper for any blocks placed in the "content top" region */
+}
+
+#content-header { /* Wrapper for breadcrumb, title, messages, tabs, and help */
+}
+
+h1.title, /* The title of the page */
+h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
+h3.title { /* Comment title */
+  margin: 0em;
+}
+
+h1 {
+  /*old: font-family: "Calibri", "Helvetica Neue", "Helvetica", "Arial", sans-serif;*/
+  font-family: 'Kulturista SemiBold', Georgia, serif;
+  font-weight: normal;
+  font-size: 200%;
+  color: #197b30;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+
+div.messages { /* Important messages (status, warning, and error) for the user */
+  margin: 0em 1em 5px 1em;
+  border: 2px solid #ccc;
+  padding: 5px;
+  color: #000;
+  background-color: #fff;
+  font-style: italic;
+}
+
+div.status { /* Normal priority messages */
+}
+
+div.warning { /* Medium priority messages */
+  border-color: #ff7;
+}
+
+div.warning,
+tr.warning,
+body.section-admin tr.warning {
+  color: #000;
+  background-color: #ffc;
+}
+
+div.error { /* High priority messages. See also the .error declaration below. */
+  border-color: #c00;
+}
+
+div.error,
+tr.error,
+body.section-admin tr.error {
+  color: #900;
+  background-color: #fee;
+}
+
+div.tabs { /* See also the tabs.css file. */
+}
+
+.help { /* Help text on a page */
+  margin: 1em 0em;
+}
+
+.more-help-link { /* Link to more help */
+  font-size: 0.85em;
+  text-align: right;
+}
+
+/* Nodes */
+body.section-node #content-area p {
+  font-family: 'Nudista Standard', Tahoma, Helvetica, sans-serif !important;
+  font-size: 110%;
+}
+body.section-node #content-area,
+body.section-help #content-area,
+body.section-premium #content-area,
+body.section- #content-area { /* Wrapper for the actual page content */
+  font-family: 'Nudista Standard', Tahoma, Helvetica, sans-serif;
+  font-size: 110%;
+  color: #444;
+  line-height: 1.25em;
+}
+
+body.section-node #content-area a,
+body.section-node #content-area a:visited,
+body.section-premium #content-area a,
+body.section-premium #content-area a:visited
+body.section-help #content-area a,
+body.section-help #content-area a:visited {
+  color: #00aeef;
+}
+
+body.section-node #content-area a:hover,
+body.section-premium #content-area a:hover,
+body.section-help #content-area a:hover {
+  text-decoration: underline;
+}
+
+body.section-node #content-area .node-inner h2 {
+  font-family: 'Kulturista SemiBold', Georgia, serif;
+  font-weight: normal;
+  color: #197b30;
+}
+
+/* Broadcasts, Events */
+
+body.section-broadcasts #content-area,
+body.section-users #content-area,
+body.section-groups-events #content-area {
+
+}
+
+#broadcast-header h1 {
+  line-height: 1.3em;
+  margin-bottom: 0;
+}
+
+body.section-broadcasts #content-area h1 {
+  line-height: 1em;
+}
+
+#broadcast-menu > div > h3 > span,
+#users-menu > div > h3,
+#ge-menu > div > h3,
+#broadcasts-menu > div > h3 {
+  font-family: 'Kulturista Standard', Georgia, serif;
+}
+
+#broadcast-menu > div > ul > li,
+#users-menu > div > ul > li,
+#ge-menu > div > ul > li,
+#broadcasts-menu > div > ul > li {
+  font-family: 'Nudista Standard', Tahoma, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 108.33%;
+}
+
+#broadcast-menu > div > ul li a,
+#users-menu > div > ul li a,
+#ge-menu > div > ul li a,
+#broadcasts-menu > div > ul li a {
+  color: #197b30;
+}
+
+#broadcast-menu > div > ul li a:hover,
+#users-menu > div > ul li a:hover,
+#ge-menu > div > ul li a:hover,
+#broadcasts-menu > div > ul li a:hover {
+  color: #111;
+}
+
+
+#broadcast-menu > div > ul > li.subfilter-selected a,
+#broadcast-menu > div > ul li.filter-selected > a,
+#users-menu > div > ul li.subfilter-selected a,
+#users-menu > div > ul li.filter-selected > a,
+#ge-menu > div > ul li.subfilter-selected a,
+#ge-menu > div > ul li.filter-selected > a,
+#broadcasts-menu > div > ul li.subfilter-selected a,
+#broadcasts-menu > div > ul li.filter-selected > a {
+  font-weight: normal;
+  color: #111;
+}
+
+div.bambuser-ui-tabs ul li a:hover {
+  color: #197b30;
+}
+
+
+div.bambuser-ui-tabs {
+  font-family: 'Kulturista Standard', Georgia, serif;
+  font-size: 110%;
+}
+div.bambuser-ui-tabs ul li a:hover {
+  color: #222;
+}
+
+div.bambuser-ui-tabs ul li.breaking-news a {
+  color: white;
+  font-family: 'Kulturista SemiBold', Georgia, serif;
+  background: #C33;
+}
+div.bambuser-ui-tabs ul li.breaking-news a:hover {
+  color: white;
+}
+
+
+div.bambuser-ui-tabs ul li a {
+  font-weight: normal;
+  color: #197b30;
+}
+
+.bambuser-ui-video-small h4 {
+  color: #197b30;
+}
+
+/* Channel */
+
+body.section-channel #profile-tabs a,
+body.section-channel #broadcast-main h4 > a,
+body.section-channel .flag-link a,
+body.section-channel #broadcast-metadata a {
+  color: #197b30;
+}
+body.section-channel #profile-tabs a:hover,
+body.section-channel #broadcast-main h4 > a:hover,
+body.section-channel .flag-link a:hover,
+body.section-channel #broadcast-metadata a:hover {
+  color: #222;
+}
+
+body.section-channel h2 {
+  font-family: 'Kulturista Standard', Georgia, serif;
+  font-weight: normal;
+}
+
+body.section-channel #profile-menu div.country span,
+body.section-channel #profile-menu div.date {
+  font-family: 'Nudista Standard', Tahoma, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+body.section-channel #broadcast-metadata #broadcast-overview > h2 {
+  color: #888;
+}
+
+body.section-channel .menuitem h4 {
+  font-family: 'Kulturista Standard', Georgia, serif;
+}
+
+/* Dashboard */
+
+body.section-dashboard #db-menu h2 {
+  font-family: 'Kulturista SemiBold', Georgia, serif;
+  font-weight: normal;
+}
+
+body.section-dashboard #db-user h3 {
+  font-family: 'Kulturista SemiBold', Georgia, serif;
+  font-weight: normal;
+}
+
+body.section-dashboard #db-user a:visited,
+body.section-dashboard #db-user a {
+  color: #197b30;
+}
+
+body.section-dashboard #db-user .stats {
+  font-family: 'Nudista Standard', Tahoma, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+/* Users */
+#users-menu > div > h3 {
+  font-family: 'Kulturista Standard', Georgia, serif;
+}
+
+#users-menu > div > ul > li {
+  font-family: 'Nudista Standard', Tahoma, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 108.33%;
+}
+.bambuser-ui-user h4 {
+  font-family: 'Kulturista SemiBold', Georgia, serif;
+  font-weight: normal;
+  color: #197b30;
+}
+
+
+/* Front */
+body.front .bambuser-front-video-group .metadata h4 > a,
+body.front .bambuser-front-video-group > h3 > a,
+body.front .menubox p a,
+body.front .menubox div a {
+  color: #197b30 !important;
+}
+
+body.front #front-featured span,
+body.front #front-featured span > strong {
+  font-family: 'Nudista Standard', Tahoma, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+body.front #front-container #front-main h1 {
+  line-height: 1em;
+}
+
+body.front .menubox h2 {
+  font-family: 'Kulturista SemiBold', Georgia, serif;
+  font-weight: normal;
+  color: #197b30;
+}
+
+body.front #front-featured h3 {
+  font-family: 'Kulturista SemiBold', Georgia, serif;
+  font-weight: normal;
+  color: #197b30;
+}
+
+body.front #front-main h2 {
+  font-family: 'Kulturista SemiBold', Georgia, serif;
+  font-weight: normal;
+}
+
+body.front .bambuser-front-video-group h3 {
+  font-family: 'Kulturista SemiBold', Georgia, serif;
+  font-weight: normal;
+  color: #197b30;
+}
+
+/* Business */
+body.page-business div.box h1 {
+  margin-top: 0.25em;
+}
+
+.pager { /* A list of page numbers when more than 1 page of content is available */
+  clear: both;
+  margin: 1em 0em;
+  text-align: center;
+}
+
+.pager a, .pager strong.pager-current {
+  padding: 0.5em;
+}
+
+.feed-icons { /* The links to the RSS or Atom feeds for the current list of content */
+  margin: 1em 0em;
+}
+
+#content-bottom { /* Wrapper for any blocks placed in the "content bottom" region */
+}
+
+/** sidebar-left **/
+#sidebar-left {
+}
+
+#sidebar-left-inner {
+}
+
+/** sidebar-right **/
+#sidebar-right {
+}
+
+#sidebar-right-inner {
+}
+
+/** footer **/
+#footer {
+  background: url("./images/b4/border-dotted.gif") repeat-x;
+  padding-top: 2px;
+}
+
+body.front #footer {
+  background: transparent;
+  padding-top: 0;
+}
+
+#footer-inner {
+  font-family: 'Kulturista Standard', Georgia, sans-serif;
+  margin: 0em;
+  padding: 15px 10px;
+  color: #757575;
+}
+
+#footer div.menu-right {
+  float: right;
+}
+
+#footer img {
+  vertical-align: text-top;
+}
+
+#footer ul {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+
+#footer ul li {
+  display: inline;
+  list-style-type: none;
+  margin: 0em;
+  padding: 0em;
+}
+
+#footer a:hover {
+  color: #555;
+}
+
+#footer a {
+  margin: 0em;
+  padding: 0px 8px;
+  color: #999;
+}
+
+#footer li.narrow a {
+  padding: 0px 3px;
+}
+
+#footer li.last a {
+  border-right: none;
+}
+
+#footer li.emphasized a {
+}
+
+/** closure **/
+#closure-blocks { /* Wrapper for any blocks placed in the closure region */
+}
+
+/** Drupal nodes **/
+#node-form {
+  /*width: 460px;*/
+}
+
+#node-form label {
+  font-size: 12pt;
+  margin: 20px 0px 10px 0px;
+}
+
+#node-form .form-required {
+  display: none;
+}
+
+#edit-body {
+  /*height: 100px;*/
+}
+
+.node { /* Node wrapper */
+}
+
+.node-inner { /* Additional wrapper for node */
+}
+
+.sticky { /* A sticky node (displayed before others in a list) */
+}
+
+.node-unpublished { /* Unpublished nodes */
+  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
+
+.node-unpublished div.unpublished, /* The word "Unpublished" displayed beneath the content. */
+.comment-unpublished div.unpublished {
+  height: 0em;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif; /* Impact and Arialâ€¦ seriously? */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+.node-mine { /* A node created by the current user */
+}
+
+.node-teaser { /* A node displayed as teaser */
+}
+
+/* All nodes are given a node-type-FOO class that describes the type of
+* content that it is. If you create a new content type called
+* "my-custom-type", it will receive a "node-type-my-custom-type" class.
+*/
+.node-type-page { /* Page content node */
+}
+
+.node h2.title { /* Node title */
+}
+
+.marker { /* "New" or "Updated" marker for content that is new or updated for the current user */
+  color: #c00;
+}
+
+.node.node-unpublished .picture,
+.comment.comment-unpublished .picture {
+  position: relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */
+}
+
+.node .submitted { /* The "posted by" information */
+}
+
+.node .taxonomy { /* Node taxonomy (categories) */
+}
+
+.node .content { /* Node's content wrapper */
+}
+
+.node div.links { /* Wrapper for node links */
+  margin: 1em 0em;
+}
+
+ul.links { /* Taxonomy links, node links, comment links */
+  margin: 0em;
+  padding: 0em;
+}
+
+ul.links.inline {
+  display: inline;
+}
+
+ul.links li {
+  display: inline;
+  list-style-type: none;
+  padding: 0em 0.5em;
+}
+
+.preview .node { /* Preview of the content before submitting new or updated content */
+  /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+}
+
+/** Drupal comments **/
+#comments { /* Wrapper for all comments */
+  margin: 1em 0em;
+}
+
+.comment { /* Wrapper for a single comment */
+}
+
+.comment-inner { /* Additional wrapper for a single comment */
+}
+
+.comment.odd { /* An odd-numbered comment in the list of comments */
+}
+
+.comment.even { /* An even-numbered comment in the list of comments */
+}
+
+.comment-unpublished { /* Unpublished comments */
+  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
+
+.comment-unpublished div.unpublished { /* The word "Unpublished" displayed beneath the content. See also the div.unpublished declaration in the node section above. */
+}
+
+.comment-by-author { /* A comment created by the node's author */
+}
+
+.comment-by-anon { /* A comment created by an anonymous user */
+}
+
+.comment-mine { /* A comment created by the current user */
+}
+
+.comment h3.title { /* Comment title */
+}
+
+.new { /* "New" marker for comments that are new for the current user */
+  color: #c00;
+}
+
+.comment .picture { /* The picture of the comment author */
+}
+
+.comment .submitted { /* The "posted by" information */
+}
+
+.comment .content { /* Comment's content wrapper */
+}
+
+.comment div.links { /* Wrapper for comment links. See also the ul.links declaration in the node section above. */
+  margin: 1em 0em;
+}
+
+.indented { /* Nested comments are indented */
+  /* margin-left: 25px; */ /* Drupal core uses a 25px left margin */
+}
+
+.preview .comment { /* Preview of the comment before submitting new or updated comment */
+  /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+}
+
+/** Drupal blocks **/
+.block { /* Block wrapper */
+  margin-bottom: 1em;
+}
+
+.block.region-odd { /* Zebra striping for each block in the region */
+}
+
+.block.region-even { /* Zebra striping for each block in the region */
+}
+
+.block.odd { /* Zebra striping independent of each region */
+}
+
+.block.even { /* Zebra striping independent of each region */
+}
+
+.region-count-1 { /* Incremental count for each block in the region */
+}
+
+.count-1 { /* Incremental count independent of each region */
+}
+
+.block-inner { /* Additional wrapper for block */
+}
+
+.block h2.title { /* Block title */
+}
+
+.block .content { /* Block's content wrapper */
+}
+
+
+/** Drupal boxes **/
+/* Wrapper for Comment form, Comment viewing options, Menu admin, and
+* Search results.
+*/
+.box { /* Wrapper for box */
+}
+
+.box-inner { /* Additional wrapper for box */
+}
+
+.box h2.title { /* Box title */
+}
+
+.box .content { /* Box's content wrapper */
+}
+
+/** Miscellaneous Drupal styles **/
+.error { /* Errors that are separate from div.messages status messages (see above.) */
+  color: #c00;
+}
+
+.more-link { /* Aggregator, blog, and forum more link */
+  text-align: right;
+}
+
+#user-login-form { /* Drupal's default login form */
+  text-align: left;
+}
+
+
+
+li a.active { /* The active item in a Drupal menu */
+  color: #000;
+}
+
+.container-inline div, .container-inline label { /* Inline labels and form divs */
+  display: inline;
+}
+
+.tips { /* Tips for Drupal's input formats */
+  margin: 0em;
+  padding: 0em;
+  font-size: 0.9em;
+}
+
+
+
+
+
+
+
+/*
+ * Rollover edit links for blocks
+ */
+
+  div.block
+  {
+    position: relative;
+  }
+
+  div.block div.edit
+  {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 40;
+    border: 1px solid #eee;
+    padding: 0 2px;
+    font-size: 9px;
+    background-color: #fff;
+  }
+
+  div.block:hover div.edit
+  {
+    display: block;
+  }
+
+
+
+  body{font-size:100%;}#page{font-size:.875em;line-height:1.286em;}body,p,td,tr,th,input,textarea,select,option{font-family:"Helvetica Neue","Helvetica","Arial",sans-serif;font-size:10pt;}p{font-size:9pt;}a,.b-link{color:#3f8000;text-decoration:none;}.b-link{cursor:pointer;}.secondary{color:#808080;font-weight:normal;}.clear-block{clear:both;}#page fieldset{border:none;margin:0;padding:0;}#page .form-item{color:#808080;}#page .form-item label{color:#000;}#page .form-submit{margin-top:10px;}#page .form-required{color:#000;}#page input[type="text"],#page input[type="password"]{margin:.1em;padding:.3em;font-family:inherit;font-size:1.2em;border:1px solid #dbdbdb;}#page form .description{color:#4b4b4b;}#page .form-item,#page .form-checkboxes,#page .form-radios{margin:1em 0;}#page .form-item input.error,#page .form-item textarea.error,#page .form-item select.error{border:2px solid #c00;}#page .form-item label{display:block;font-weight:bold;}#page .form-item label.option{display:inline;font-weight:normal;}#page .form-required{color:#c00;}#page .form-item .description{font-size:.85em;}#page .form-checkboxes .form-item,#page .form-radios .form-item{margin:.4em 0;}html js{visibility:hidden;}html.js .js{visibility:visible;}.broadcast{position:relative;margin:0;padding:0;overflow:hidden;}.broadcast-label{position:absolute;margin:0;padding:0;overflow:hidden;display:none;}.b-bcl{margin:0;padding:0;}.b-bcl .broadcast{width:100%;}.b-bcl-details .broadcast{display:block;height:50px;width:100%;list-style-type:none;}.b-bcl-details .broadcast .preview{display:block;top:5px;left:5px;width:60px;height:40px;cursor:pointer;background:url(http://static.bambuser.com/modules/b/ui/bambuser_ui/no-preview-140x115.png);}.b-bcl-details .broadcast .title{display:block;top:5px;left:70px;height:1.2em;line-height:1.2em;font-weight:bold;color:#3f8000;cursor:pointer;}.b-bcl-details .broadcast .owner{display:block;top:20px;left:70px;height:1.2em;line-height:1.2em;}.b-bcl-details .broadcast .date{display:block;top:35px;left:70px;font-size:8pt;height:10pt;color:#808080;}.b-bcl-details .broadcast .tools{overflow:hidden;}.b-bcl-details .broadcast .tools,.b-bcl-details .broadcast .tools a{font-weight:bold;font-size:8pt;color:#cd0000;cursor:pointer;}.b-bcl-details .broadcast .label-live{display:block;top:5px;right:5px;color:#cd0000;font-weight:bold;text-align:right;height:1em;}#page .b-bcl-details .broadcast .player-popup{display:block;color:#6c0;font-weight:bold;text-align:right;height:1em;cursor:pointer;}.b-bcl-list .broadcast{display:block;height:1.2em;width:100%;}.b-bcl-list .broadcast .title{display:block;top:0;left:0;font-weight:bold;height:20px;padding-right:5px;color:#3f8000;}.b-bcl-list .broadcast .owner{display:block;top:0;left:100px;font-size:7pt;line-height:1.6em;padding:0 3px;height:20px;background:inherit;}.b-bcl-list .broadcast-type-archived .date{display:block;top:0;right:0;font-size:7pt;height:20px;line-height:1.6em;padding:0 3px;color:#808080;background:inherit;}.b-bcl-list .broadcast-type-live .label-live{display:block;top:0;right:0;color:#cd0000;background:inherit;font-weight:bold;text-align:right;height:20px;font-size:7pt;line-height:1.6em;padding:0 3px;}.b-bcl-preview .broadcast{display:block;float:left;width:62px;height:40px;}.b-bcl-preview .broadcast .preview{display:block;top:2px;left:2px;width:58px;height:36px;cursor:pointer;background:url(http://static.bambuser.com/modules/b/ui/bambuser_ui/no-preview-140x115.png);}.b-tabs{float:left;clear:both;margin:5px 0 5px 0;padding:0;width:100%;border-bottom:1px solid #dbdbdb;}.b-tabs ul{margin:-10px 0 0 0;padding:0;list-style:none;}.b-tabs ul li{float:left;margin:10px 0 -1px 0;padding:0 10px 0 0;}.b-tabs ul li .tab
+
+
+
+/*
+   Organic Tabs
+   by Chris Coyier
+   http://css-tricks.com
+*/
+
+* { margin: 0; padding: 0; }
+body { font: 12px Georgia, serif; }
+html { overflow-y: scroll; }
+a { text-decoration: none; }
+a:focus { outline: 0; }
+p { font-size: 15px; margin: 0 0 20px 0; }
+#page-wrap { width: 440px; margin: 80px auto; }
+h1 { font: bold 40px Sans-Serif; margin: 0 0 20px 0; }
+
+/* Generic Utility */
+.hide { position: absolute; top: -9999px; left: -9999px; }
+
+
+/* Specific to example one */
+
+#example-one { background: #eee; padding: 10px; margin: 0 0 20px 0; -moz-box-shadow: 0 0 5px #666; -webkit-box-shadow: 0 0 5px #666; }
+
+#example-one .nav { overflow: hidden; margin: 0 0 10px 0; }
+#example-one .nav li { width: 97px; float: left; margin: 0 10px 0 0; }
+#example-one .nav li.last { margin-right: 0; }
+#example-one .nav li a { display: block; padding: 5px; background: #959290; color: white; font-size: 10px; text-align: center; border: 0; }
+#example-one .nav li a:hover { background-color: #111; }
+
+#example-one ul { list-style: none; }
+#example-one ul li a { display: block; border-bottom: 1px solid #666; padding: 4px; color: #666; }
+#example-one ul li a:hover { background: #fe4902; color: white; }
+#example-one ul li:last-child a { border: none; }
+
+#example-one ul li.nav-one a.current, #example-one ul.featured li a:hover { background-color: #0575f4; color: white; }
+#example-one ul li.nav-two a.current, #example-one ul.core li a:hover { background-color: #d30000; color: white; }
+#example-one ul li.nav-three a.current, #example-one ul.jquerytuts li a:hover { background-color: #8d01b0; color: white; }
+#example-one ul li.nav-four a.current, #example-one ul.classics li a:hover { background-color: #FE4902; color: white; }
+
+
+
+/* Specific to example two */
+
+.example-two .list-wrap { background: #eee; padding: 10px; margin: 0 0 15px 0; }
+
+/**<<<<<<< .mine
+.example-two ul { list-style: none; }
+.example-two ul li a { display: block; border-bottom: 1px solid #666; padding: 4px; color: #666; }
+.example-two ul li a:hover { background: #333; color: white; }
+.example-two ul li:last-child a { border: none; }
+=======
+.**/
+.example-two ul { list-style: none; }
+.example-two ul li a { padding: 4px; color: #666; }
+.example-two ul li a:hover { }
+.example-two ul li:last-child a { border: none; }
+
+.example-two .nav { overflow: hidden; }
+.example-two .nav li { width: 97px; float: left; margin: 0 10px 0 0; }
+.example-two .nav li.last { margin-right: 0; }
+.example-two .nav li a { display: block; padding: 5px; background: #666; color: white; font-size: 10px; text-align: center; border: 0; }
+
+.example-two li a.current,#example-two li a.current:hover { background-color: #eee !important; color: black; }
+.example-two .nav li a:hover, #example-two .nav li a:focus { background: #999;}
+
+
+/** EIGENE **/
+
+
+
+body{
+font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+
+.bodytext {
+  line-height: 20px;
+  }
+
+h1 {
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;  
+  
+}
+
+
+#td_so{
+  
+  width: 250px; 
+  top: 200px;
+  margin-left: 5px; 
+  border: 1px solid rgb(153, 51, 0); 
+  padding: 7px;
+  
+}
+
+
+ h1, form, button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+/* ----------- My Form ----------- */
+.myform{
+margin:0 auto;
+width:660px;
+padding:14px;
+}
+
+.mysmallform{
+margin:0 auto;
+width:auto;
+padding:14px;
+}
+
+/* ----------- stylized ----------- */
+#stylized{
+width:300px;
+}
+
+
+
+
+
+#stylized button{
+clear:both;
+width:80px;
+margin:9px 0 14px 14px;
+background:#5F4641;
+text-align:center;
+line-height:21px;
+color:#B3D9F7;
+border:0px;
+
+}
+
+#midContainer{
+  width:1000px;
+}
+
+
+#midContainerLeft{
+  width:200px;
+}
+#midContainerRight{
+  width:800px;
+}
+
+#result{
+top:20px;
+margin:0 auto;
+width:540px;
+padding:14px;
+height:100%;
+}
+
+
+#resultLeft{
+float:left; 
+width:180px;
+}
+
+#resultRight{
+
+float:right;
+width:350px;
+font-size:14px;
+color: #5F4641; 
+}
+
+
+#logbox{
+  width: 250px; 
+  top: 200px;
+  margin-left: 5px; 
+  border: 1px solid rgb(153, 51, 0); 
+  padding: 7px;
+  
+  
+}
+
+
+#container_rechts{
+
+}
+
+#container_ask{
+background-color:#B3D9F7; 
+max-width:1500px; 
+  
+}
+
+/*
+ * Slide Formular
+ */  
+ #contactFormContainer
+            {
+               position:absolute;
+               left:520px;
+               float:right;
+            }
+            #contactForm
+            {
+               height:577px;
+               width:351px;
+               display:none;
+            }
+ 
+#contactForm fieldset
+            {
+                padding:30px;
+          border:none;
+        background:#5F4641;
+        color:#fff;
+            }      
+            #contactForm label
+            {
+               display:block;
+               color:#fff;
+            }      
+            #contactForm input[type=text]
+            {
+               display:block;
+               border:solid 1px #4d3a24;
+               width:100%;
+               margin-bottom:10px;
+               height:24px;
+            }  
+            #contactForm textarea
+            {
+               display:block;
+               border:solid 1px #4d3a24;
+               width:100%;
+               margin-bottom:10px;
+            }  
+            #contactForm input[type=submit]
+            {
+               background-color:#4d3a24;
+               border:solid 1px #23150c;
+               color:#fff;
+               padding:5px;
+            }                
+            #contactLink
+            {
+               height:25px;
+               width:350px;
+         
+               cursor:pointer;
+         color:#5F4641;
+         text-align:center;
+    
+         vertical-align: middle;
+         
+         
+            }
+            #messageSent
+            {
+               color:#ff9933;
+               display:none;
+            }
+h2.trigger {
+  padding: 0 0 0 50px;
+  margin: 0 0 5px 0;
+  background: url(h2_trigger_a.gif) no-repeat;
+  height: 46px;
+  line-height: 46px;
+  width: 450px;
+  font-size: 2em;
+  font-weight: normal;
+  float: left;
+}
+h2.trigger a {
+  color: #B3D9F7;
+  text-decoration: none;
+  display: block;
+}
+h2.trigger a:hover { color: #ccc; }
+h2.active {background-position: left bottom;} /*--When toggle is triggered, it will shift the image to the bottom to show its "opened" state--*/
+.toggle_container {
+  margin: 0 0 5px;
+  padding: 0;
+  border-top: 1px solid #d6d6d6;
+  background: #f0f0f0 url(toggle_block_stretch.gif) repeat-y left top;
+  overflow: hidden;
+  font-size: 1.2em;
+  width: 500px;
+  clear: both;
+}
+.toggle_container .block {
+  padding: 20px; /*--Padding of Container--*/
+  background: url(toggle_block_btm.gif) no-repeat left bottom; /*--Bottom rounded corners--*/
+}
+
+
+li{
+   display: inline;
+  list-style-type: none;
+
+  }
+
+#nix{
+  list-style-type:none;
+  
+}
+
+
+.capp{
+  margin-left:50px;
+  background: #e3e3e3;
+  color:#000;
+  border-left: 1px;
+  border: 1px;
+  width: 400px;
+  height: 27px;
+  margin: 10px 5px 0px 0px;
+}
+
+
+
+/* ------------------------ Main menu (top nav) ------------------ */
+.container#main_nav_wrapper {
+  padding: 0;
+  width: 1000px;
+  position: relative;
+  bottom: -4px; }
+  .container#main_nav_wrapper ul#main_nav {
+    height: 63px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   }
+    .container#main_nav_wrapper ul#main_nav li {
+      float: left;
+      height: 63px;
+      width: 146px;
+      position: relative;
+      text-align: center; }
+      .container#main_nav_wrapper ul#main_nav li .separator, .container#main_nav_wrapper ul#main_nav li .left_border, .container#main_nav_wrapper ul#main_nav li .right_border {
+        position: absolute;
+        height: 63px;
+        width: 1px;
+        top: 0; }
+      .container#main_nav_wrapper ul#main_nav li .separator {
+        right: 0;
+   }
+      .container#main_nav_wrapper ul#main_nav li .right_border {
+        right: 1px;
+      }
+      .container#main_nav_wrapper ul#main_nav li .left_border {
+        left: 0px; }
+      .container#main_nav_wrapper ul#main_nav li .bottom {
+        position: absolute;
+        bottom: -2px;
+        width: 30px;
+        left: 58px; }
+      .container#main_nav_wrapper ul#main_nav li.search {
+        width: 413px; }
+      .container#main_nav_wrapper ul#main_nav li.menu:hover {
+        cursor: pointer; }
+      .container#main_nav_wrapper ul#main_nav li.menu a {
+        display: block;
+        padding: 18px 0px;
+        font-size: 20px;
+        color: #197b30;
+        text-align: center;
+        letter-spacing: 1px;
+        letter-spacing: 0; }
+        .container#main_nav_wrapper ul#main_nav li.menu a:hover {
+          text-decoration: none; }
+      .container#main_nav_wrapper ul#main_nav li.selected {
+        height: 63px;
+  }
+        .container#main_nav_wrapper ul#main_nav li.selected .right_border {
+  }
+        .container#main_nav_wrapper ul#main_nav li.selected .left_border {
+  }
+        .container#main_nav_wrapper ul#main_nav li.selected .bottom {
+          height: 20px;
+  }
+    .container#main_nav_wrapper ul#main_nav.home_selected {
+      border-bottom: 0; }
+      .container#main_nav_wrapper ul#main_nav.home_selected li.selected .bottom {
+        height: 20px;
+        bottom: -1px;
+  }
+      .container#main_nav_wrapper ul#main_nav.home_selected.previous_of_selected .right_border {
+        background: none; }
+    .container#main_nav_wrapper ul#main_nav #search {
+      padding: 11px 18px; }
+  .container#main_nav_wrapper input#formee-input {
+    float:left;
+  font-size:18px;
+  padding:7px 3px;
+  border:solid 0px #5F4641;
+  width:200px;
+  margin:9px 0 0px 0px;
+color: #5F4641;
+ }
+  .container#main_nav_wrapper #global_search_button input[type="submit"] {
+    float: left;
+    padding: 2px 6px; }
+
+  .container#main_nav_wrapper #global_search_form {
+    float: left;
+    padding: 5px 6px; }
+
+
+/**************************************************************************************** */
+/*********************************** IE 6 / 7 / 8 hacks ********************************* */
+/*************************************************************************************** */
+.container#main_nav_wrapper select#global_search_topic {
+  margin: 6px 0 0 0 \9;
+  padding: 5px 5px 4px 5px \9; }
+.container#main_nav_wrapper #global_search_button .green_button input {
+  margin: 4px 6px \9; }
+
+#main_nav_home_wrapper {
+  border: 1px solid white;
+  border-top: 0;
+  display: none; }
+  #main_nav_home_wrapper ul#main_nav_home {
+    margin: 0;
+    height: 70px;
+    list-style: none;
+    background-color: #c7d6bc;
+    border: 1px solid #97a88c; }
+    #main_nav_home_wrapper ul#main_nav_home li {
+      float: left; }
+      #main_nav_home_wrapper ul#main_nav_home li a {
+        display: block;
+        width: 150px;
+        margin: 6px 0 0 0;
+        padding: 30px 0 0 0;
+        color: #181818;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Gill Sans", Tahoma, Verdana;
+        letter-spacing: 1px;
+        background-position: center top; }
+        #main_nav_home_wrapper ul#main_nav_home li a#home_news {
+          background-image: url(/images/icons/menus/home_li_news.png);
+          background-repeat: no-repeat; }
+        #main_nav_home_wrapper ul#main_nav_home li a#home_library {
+          background-image: url(/images/icons/menus/home_li_library.png);
+          background-repeat: no-repeat; }
+        #main_nav_home_wrapper ul#main_nav_home li a#home_publishing {
+          background-image: url(/images/icons/menus/home_li_publishing.png);
+          background-repeat: no-repeat; }
+        #main_nav_home_wrapper ul#main_nav_home li a:hover {
+          color: #5d3944;
+          text-decoration: none; }
+      #main_nav_home_wrapper ul#main_nav_home li.selected a {
+        color: #5d3944; }
+        #main_nav_home_wrapper ul#main_nav_home li.selected a#home_news {
+          background-image: url(/images/icons/menus/home_li_news_selected.png);
+          background-repeat: no-repeat; }
+        #main_nav_home_wrapper ul#main_nav_home li.selected a#home_library {
+          background-image: url(/images/icons/menus/home_li_library_selected.png);
+          background-repeat: no-repeat; }
+        #main_nav_home_wrapper ul#main_nav_home li.selected a#home_publishing {
+          background-image: url(/images/icons/menus/home_li_publishing_selected.png);
+          background-repeat: no-repeat; }
+      #main_nav_home_wrapper ul#main_nav_home li.reader_points_status {
+        float: right;
+        width: 300px;
+        text-align: right;
+        padding: 15px; }
+        #main_nav_home_wrapper ul#main_nav_home li.reader_points_status .trophy {
+          font-size: 15px;
+          color: #5d3944;
+          line-height: 24px;
+          margin-top: 3px;
+          display: inline-block; }
+
+#cards{float:left;}
+#welcome{float:right;}
+
+#flash, #errors {
+  background-color: #0061CE;
+  color: white;
+  font-weight: bold;
+  border: 1px solid black;
+  width: 50%;
+  margin: 3px;
+  padding: 3px;
+}
+
+
+#fileupload button{
+  background:#5F4641;
+  color:#fff;
+}
+.txtFileName {
+overflow: hidden;
+}

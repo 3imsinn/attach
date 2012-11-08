@@ -1,0 +1,377 @@
+html, body {
+  height: 100%; 
+  margin: 0px; 
+  padding: 0px; 
+  font: 13px/20px Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+.container {
+  min-height: 100%;
+  position:relative; /* needed for footer positioning*/
+  height:auto !important; /* real browsers */
+  height:100%; /* IE6: treated as min-height*/  
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.8em;
+  font-family: Verdana;
+}
+
+#home_splash {
+  border: 1px solid black;
+  margin-bottom: 10px;  
+}
+
+.game h1 {
+    color: #202020;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: normal !important;
+    margin-bottom: 10px;
+}
+
+.buy h3 em {
+    color: #999999;
+    float: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    height: auto;
+    line-height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 12px;
+}
+
+.buy h3 span {
+    color: #202020;
+    float: left;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 80%;
+    margin-right: 5px;
+}
+
+.location-title {
+  margin-bottom: 2px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#header {
+  width: 100%;
+  height: 75px;
+  background-color: black;
+  background-image:url('http://dev2.gamenomad.com/images/bg.jpg');
+  color: white;
+}
+
+#header a {
+  color: white;
+}
+
+#flash, #errors {
+  background-color: #0061CE;
+  color: white;
+  font-weight: bold;
+  border: 1px solid black;
+  width: 50%;
+  margin: 3px;
+  padding: 3px;
+}
+
+.bullet li {
+  list-style-type: disc;
+list-style-position: outside;
+margin-left: 10px; 
+}
+
+input[type="text"], input[type="password"], input.text, input.title, textarea, select {
+    background-color: #FFFFFF;
+    border: 1px solid #000;
+}
+
+input[type=submit] {
+  background-color: #0061CE;
+  color: white;
+  padding: 3px;
+  font-weight: bold;
+}
+
+#toc-account {
+  width: 100%;
+  height: 20px;
+  background-color: #0061CE;
+  color: white;
+  margin-bottom: 0px;
+  border-bottom: 1px solid gray;
+}
+
+#nav-account li
+{
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+#nav-account li a {
+  color: #00F0FF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#toc-game {
+  width: 100%;
+  height: 20px;
+  background-color: #241F20;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#nav-game li
+{
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+#nav-game li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#nav {
+  color: #777;
+}
+
+#nav li {
+  float:left;
+  margin:0 4px 0 0;
+  background-color: #FF9900;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 4px solid white;
+  margin-right: 5px;
+  font-size: 1.0em;
+  font-weight: bold;
+}
+
+#nav li a {
+  float: left;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#textarea_message {
+  width: 400px;
+  height: 150px;
+}
+
+.game_cover {
+  float: left;
+  border: 1px solid black;
+  margin: 3px 10px 3px 3px;
+  width: 113px;
+  height: 160px;
+}
+
+.game_cover_s {
+  float: left;
+  border: 1px solid black;
+  margin: 3px;
+}
+
+.game-sidebar {
+  padding: 3px;
+  width: 100%;
+  border-bottom: 1px dotted #C0C0C0;
+}
+
+.account-sidebar {
+  float: left;
+  padding: 5px;
+  width: 100%;
+  border-bottom: 1px solid #C0C0C0;
+}
+
+#sidebar > h3 {
+  color: #0061CE;
+}
+
+#product_grid {
+  list-style-type: none;
+  width: 100%;
+  font-size: .75em;
+  padding: 0;
+}
+
+#product_grid li {
+    display: block;
+    float: left;
+    height: 200px;
+    margin: 0 10px 10px 0;
+    padding: 2px;
+    text-align: center;
+    width: 120px;
+}
+
+.disabled {
+  color: gray;
+}
+
+#game_edit_form {
+  width: 550px; 
+  height: 300px;
+  background-color: #FF9900;
+  color: white;
+  font-weight: bold;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 4px solid black;  
+  padding: 5px;  
+}
+
+#simplemodal-overlay {
+  background-color:#000;
+}
+
+#community_map {
+  border: 1px solid black; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 100%; 
+  width:900px; 
+  height:300px;
+}
+
+#search {
+  color: #C0C0C0;
+  padding: 2px;
+}
+
+.tiny {
+  font-size: .75em;
+}
+
+#paginator {
+  font-size: 1.0em;
+}
+
+/**
+ * Great CSS buttons from:
+ * http://devgrow.com/super-simple-css-buttons/
+ *
+ **/
+
+.button {
+  padding: 5px 10px;
+  display: inline;
+  background: #777;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-shadow: 1px 1px #666;
+  text-decoration: none;
+}
+
+.button:hover {
+    color: #fff;
+}
+    
+.button.red { background-color: #e50000; }
+.button.green { background-color: #58aa00; }
+.button.blue { background-color: #0061CE; }
+
+.pager {
+  width: 100%;  
+  clear: both;
+  float: left;
+  padding: 5px 0px 10px 0px;
+}
+
+table.community {
+  
+}
+
+.community th {
+  font-size: 1.3em; 
+}
+
+.community tr {
+  border-bottom: 1px dotted black;
+}
+
+/*
+   Organic Tabs
+   by Chris Coyier
+   http://css-tricks.com
+*/
+
+* { margin: 0; padding: 0; }
+body { font: 12px Georgia, serif; }
+html { overflow-y: scroll; }
+a { text-decoration: none; }
+a:focus { outline: 0; }
+p { font-size: 15px; margin: 0 0 20px 0; }
+#page-wrap { width: 440px; margin: 80px auto; }
+h1 { font: bold 40px Sans-Serif; margin: 0 0 20px 0; }
+
+/* Generic Utility */
+.hide { position: absolute; top: -9999px; left: -9999px; }
+
+
+/* Specific to example one */
+
+#example-one { background: #eee; padding: 10px; margin: 0 0 20px 0; -moz-box-shadow: 0 0 5px #666; -webkit-box-shadow: 0 0 5px #666; }
+
+#example-one .nav { overflow: hidden; margin: 0 0 10px 0; }
+#example-one .nav li { width: 97px; float: left; margin: 0 10px 0 0; }
+#example-one .nav li.last { margin-right: 0; }
+#example-one .nav li a { display: block; padding: 5px; background: #959290; color: white; font-size: 10px; text-align: center; border: 0; }
+#example-one .nav li a:hover { background-color: #111; }
+
+#example-one ul { list-style: none; }
+#example-one ul li a { display: block; border-bottom: 1px solid #666; padding: 4px; color: #666; }
+#example-one ul li a:hover { background: #fe4902; color: white; }
+#example-one ul li:last-child a { border: none; }
+
+#example-one ul li.nav-one a.current, #example-one ul.featured li a:hover { background-color: #0575f4; color: white; }
+#example-one ul li.nav-two a.current, #example-one ul.core li a:hover { background-color: #d30000; color: white; }
+#example-one ul li.nav-three a.current, #example-one ul.jquerytuts li a:hover { background-color: #8d01b0; color: white; }
+#example-one ul li.nav-four a.current, #example-one ul.classics li a:hover { background-color: #FE4902; color: white; }
+
+
+
+/* Specific to example two */
+
+.example-two .list-wrap { background: #eee; padding: 10px; margin: 0 0 15px 0; }
+
+<<<<<<< .mine
+.example-two ul { list-style: none; }
+.example-two ul li a { display: block; border-bottom: 1px solid #666; padding: 4px; color: #666; }
+.example-two ul li a:hover { background: #333; color: white; }
+.example-two ul li:last-child a { border: none; }
+=======
+.example-two ul { list-style: none; }
+.example-two ul li a { padding: 4px; color: #666; }
+.example-two ul li a:hover { }
+.example-two ul li:last-child a { border: none; }
+>>>>>>> .r5
+
+.example-two .nav { overflow: hidden; }
+.example-two .nav li { width: 97px; float: left; margin: 0 10px 0 0; }
+.example-two .nav li.last { margin-right: 0; }
+.example-two .nav li a { display: block; padding: 5px; background: #666; color: white; font-size: 10px; text-align: center; border: 0; }
+
+.example-two li a.current,#example-two li a.current:hover { background-color: #eee !important; color: black; }
+.example-two .nav li a:hover, #example-two .nav li a:focus { background: #999;}
